@@ -1,0 +1,146 @@
+{
+  "courses": [
+    {
+      "slug": "icf-1",
+      "page": {
+        "banner": { "bgImage": "http://placehold.it/1920x181", "heading": "Kurs Detay" },
+        "breadcrumb": [
+          { "label": "Anasayfa", "href": "index.html" },
+          { "label": "Kurslar", "href": "courses-list.html" },
+          { "label": "Koçluk ICF Seviye 1", "active": true }
+        ]
+      },
+      "course": {
+        "title": "Koçluk ICF Seviye 1",
+        "heroImage": "http://placehold.it/828x430",
+        "instructor": { "label": "Eğitmen", "name": "Selcan Arslan", "avatar": "/images/Selcan-Arslan.jpg", "link": "#" },
+        "category": { "label": "Kategori", "name": "Koçluk" },
+        "rating": { "value": 5, "reviewText": "(2 Yorum)" },
+        "description": {
+          "heading": "ICF Seviye 1 Programının Amacı Nedir?",
+          "paragraphs": ["ICF Seviye 1 eğitimi, katılımcılara:", "<ul><li>ICF’in 8 temel koçluk yetkinliğini kazandırmayı,</li><li>Profesyonel koçluk bakış açısını kazandırmayı,</li><li>Etik kurallar çerçevesinde koçluk yapmayı öğretmeyi amaçlar.</li></ul>", "Bu eğitim, katılımcının hem kişisel gelişimini destekler hem de koçluk mesleğine sağlam bir temel atmasını sağlar."]
+        },
+        "learn": {
+          "heading": "What you will learn",
+          "intro": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+          "bullets": ["Thomas Edison may have been behind the invention.", "Edison worked alongside partners, both financial and commercial...", "Battling challenging cost targets and the need to build."],
+          "afterParagraphs": ["Quasar the only home we've ever known extraordinary claims require extraordinary evidence..."]
+        },
+        "curriculum": {
+          "heading": "Carriculam",
+          "sections": [
+            {
+              "title": "Section-1: Introduction",
+              "items": [
+                {
+                  "title": "Welcome to the course",
+                  "typeLabel": "Video",
+                  "typeLabelClass": "label-primary",
+                  "iconClass": "fas fa-play-circle",
+                  "preview": true,
+                  "duration": "17 Min",
+                  "body": "Capitalize on low hanging fruit to identify a ballpark value added activity..."
+                }
+              ]
+            }
+          ]
+        },
+        "bookmarkText": "Bookmark this course",
+        "instructorBox": {
+          "heading": "About Instructor",
+          "name": "Merry Jhonson",
+          "title": "Back-end Developer",
+          "bio": "Encyclopaedia galactica Orion's sword explorations vanquish the impossible...",
+          "avatar": "http://placehold.it/80x80",
+          "link": "instructor-single.html",
+          "buttonText": "View Profile"
+        },
+        "reviews": {
+          "heading": "Reviews",
+          "subheading": "There are 2 reviews on this course",
+          "items": [
+            {
+              "name": "Lavin Duster",
+              "date": "March 7, 2016",
+              "rating": 5,
+              "text": "Brunch fap cardigan, gentrify put a bird on it distillery...",
+              "avatar": "http://placehold.it/50x50",
+              "link": "instructor-single.html"
+            }
+          ]
+        },
+        "share": [
+          { "href": "#", "className": "facebook", "icon": "fab fa-facebook-f" },
+          { "href": "#", "className": "twitter", "icon": "fab fa-twitter" },
+          { "href": "#", "className": "google", "icon": "fab fa-google-plus-g" }
+        ]
+      },
+      "sidebar": {
+        "takeCourse": {
+          "heading": "Take This Course",
+          "price": "£39.00",
+          "meta": [
+            { "icon": "far fa-user", "text": "199 Students" },
+            { "icon": "far fa-clock", "text": "Duration: 30 days" }
+          ]
+        },
+        "categories": {
+          "heading": "Course Categories",
+          "items": [
+            { "label": "Business", "href": "#", "active": false },
+            { "label": "Design", "href": "#", "active": true }
+          ]
+        },
+        "intro": {
+          "heading": "Course Intro",
+          "videoUrl": "https://www.youtube.com/embed/9bZkp7q19f0?autoplay=1",
+          "thumb": "http://placehold.it/260x220"
+        },
+        "popular": {
+          "heading": "Popular Courses",
+          "items": [{ "href": "course-single.html?slug=swift-101", "img": "http://placehold.it/60x60", "title": "Swift 101", "price": "$99.00", "priceClass": "text-primary" }]
+        },
+        "tags": {
+          "heading": "Tags",
+          "items": [
+            { "label": "Future", "href": "#" },
+            { "label": "Science", "href": "#" }
+          ]
+        }
+      }
+    },
+
+    {
+      "slug": "js-bootcamp",
+      "page": {
+        "banner": { "bgImage": "http://placehold.it/1920x181", "heading": "Kurs Detay" },
+        "breadcrumb": [
+          { "label": "Anasayfa", "href": "index.html" },
+          { "label": "Kurslar", "href": "courses-list.html" },
+          { "label": "JavaScript Bootcamp", "active": true }
+        ]
+      },
+      "course": {
+        "title": "JavaScript Bootcamp",
+        "heroImage": "http://placehold.it/828x430",
+        "instructor": { "label": "Instructor", "name": "Kaan Sensei", "avatar": "http://placehold.it/35x35", "link": "#" },
+        "category": { "label": "Category", "name": "Frontend" },
+        "rating": { "value": 4, "reviewText": "(14 Reviews)" },
+        "description": { "heading": "Course Description", "paragraphs": ["JS sıfırdan ileri düzey.", "DOM, async, OOP, tooling."] },
+        "learn": { "heading": "What you will learn", "intro": "Pratik odaklı.", "bullets": ["DOM", "Fetch/Ajax", "Async/Await"], "afterParagraphs": [] },
+        "curriculum": { "heading": "Carriculam", "sections": [] },
+        "bookmarkText": "Bookmark this course",
+        "instructorBox": { "heading": "About Instructor", "name": "Kaan Sensei", "title": "Frontend Dev", "bio": "Pratik, hızlı, gerçek projeler.", "avatar": "http://placehold.it/80x80", "link": "#", "buttonText": "View Profile" },
+        "reviews": { "heading": "Reviews", "subheading": "There are 14 reviews on this course", "items": [] },
+        "share": []
+      },
+      "sidebar": {
+        "takeCourse": { "heading": "Take This Course", "price": "$79.00", "meta": [] },
+        "categories": { "heading": "Course Categories", "items": [] },
+        "intro": { "heading": "Course Intro", "videoUrl": "#", "thumb": "http://placehold.it/260x220" },
+        "popular": { "heading": "Popular Courses", "items": [] },
+        "tags": { "heading": "Tags", "items": [] }
+      }
+    }
+  ]
+}
