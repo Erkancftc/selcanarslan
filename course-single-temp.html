@@ -145,249 +145,154 @@
       </header>
       <!-- contain main informative part of the site -->
       <main id="main">
-        <header class="heading-banner text-white bgCover" data-bind-style="backgroundImage:page.banner.bgImage" style="background-image: url(http://placehold.it/1920x181)">
-          <div class="container holder">
-            <div class="align">
-              <h1 data-bind="page.banner.heading">Course Single</h1>
+  <!-- heading banner -->
+  <header class="heading-banner text-white bgCover" id="js-hero" style="background-image: url(http://placehold.it/1920x181);">
+    <div class="container holder">
+      <div class="align">
+        <h1 id="js-hero-title">Course Single</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- breadcrumb nav -->
+  <nav class="breadcrumb-nav">
+    <div class="container">
+      <ol class="breadcrumb" id="js-breadcrumb"></ol>
+    </div>
+  </nav>
+
+  <!-- two columns -->
+  <div id="two-columns" class="container">
+    <div class="row">
+      <!-- content -->
+      <article id="content" class="col-xs-12 col-md-9">
+        <h1 class="content-h1 fw-semi" id="js-course-title">...</h1>
+
+        <!-- view header -->
+        <header class="view-header row" id="js-view-header">
+          <div class="col-xs-12 col-sm-9 d-flex" id="js-meta-left"></div>
+
+          <div class="col-xs-12 col-sm-3">
+            <div class="rating-holder">
+              <ul class="star-rating list-unstyled justify-end" id="js-rating-stars"></ul>
+              <strong class="element-block text-right subtitle fw-normal" id="js-rating-reviews"></strong>
             </div>
           </div>
         </header>
 
-        <nav class="breadcrumb-nav">
-          <div class="container">
-            <ol class="breadcrumb" data-render="page.breadcrumb">
-              <li><a href="index.html">Anasayfa</a></li>
-              <li><a href="contact.html">Course</a></li>
-              <li class="active">Swift Programming for Beginners</li>
-            </ol>
+        <div class="aligncenter content-aligncenter" id="js-hero-image-wrap"></div>
+
+        <h3 class="content-h3" id="js-desc-title">Course Description</h3>
+        <div id="js-description"></div>
+
+        <h3 class="content-h3" id="js-learn-title">What you will learn</h3>
+        <div id="js-learn-intro"></div>
+        <ul class="listDefault list-unstyled" id="js-learn-list"></ul>
+
+        <div id="js-after-learn"></div>
+
+        <h2 id="js-curriculum-title">Carriculam</h2>
+        <div id="js-curriculum"></div>
+
+        <!-- bookmarkFoot -->
+        <div class="bookmarkFoot" id="js-bookmark-foot"></div>
+
+        <h2 id="js-instructor-title">About Instructor</h2>
+        <div class="instructorInfoBox" id="js-instructor-box"></div>
+
+        <h2 id="js-reviews-title">Reviews</h2>
+        <h3 class="h6 fw-semi" id="js-reviews-subtitle"></h3>
+        <ul class="list-unstyled reviewsList" id="js-reviews-list"></ul>
+
+        <!-- reviesSubmissionForm (istersen JSON’dan kapat/aç) -->
+        <form action="#" class="reviesSubmissionForm" id="js-review-form">
+          <h2 class="text-noCase">Add a Review</h2>
+          <p>Your email address will not be published. Required fields are marked <span class="required">*</span></p>
+
+          <div class="form-group">
+            <span class="formLabel fw-normal font-lato no-shrink">Your Rating</span>
+            <ul class="star-rating list-unstyled">
+              <li><input type="checkbox" id="rate1" class="customFormReset"><label for="rate1" class="fas fa-star"><span class="sr-only">star</span></label></li>
+              <li><input type="checkbox" id="rate2" class="customFormReset"><label for="rate2" class="fas fa-star"><span class="sr-only">star</span></label></li>
+              <li><input type="checkbox" id="rate3" class="customFormReset"><label for="rate3" class="fas fa-star"><span class="sr-only">star</span></label></li>
+              <li><input type="checkbox" id="rate4" class="customFormReset"><label for="rate4" class="fas fa-star"><span class="sr-only">star</span></label></li>
+              <li><input type="checkbox" id="rate5" class="customFormReset"><label for="rate5" class="fas fa-star"><span class="sr-only">star</span></label></li>
+            </ul>
           </div>
-        </nav>
 
-        <div id="two-columns" class="container">
-          <div class="row">
-            <article id="content" class="col-xs-12 col-md-9">
-              <h1 class="content-h1 fw-semi" data-bind="course.title">Swift Programming for Beginners</h1>
-
-              <header class="view-header row">
-                <div class="col-xs-12 col-sm-9 d-flex">
-                  <div class="d-col">
-                    <div class="post-author">
-                      <div class="alignleft no-shrink rounded-circle">
-                        <a data-bind-attr="href:course.instructor.link" href="#">
-                          <img data-bind-attr="src:course.instructor.avatar,alt:course.instructor.name" src="http://placehold.it/35x35" class="rounded-circle" alt="image description" />
-                        </a>
-                      </div>
-                      <div class="description-wrap">
-                        <h2 class="author-heading"><a href="#" data-bind="course.instructor.label">Instructor</a></h2>
-                        <h3 class="author-heading-subtitle text-uppercase" data-bind="course.instructor.name">lospher cooke</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="d-col">
-                    <div class="post-author">
-                      <div class="alignleft no-shrink icn-wrap">
-                        <i class="far fa-bookmark"></i>
-                      </div>
-                      <div class="description-wrap">
-                        <h2 class="author-heading"><a href="#" data-bind="course.category.label">Category</a></h2>
-                        <h3 class="author-heading-subtitle text-uppercase" data-bind="course.category.name">Programing language</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-3">
-                  <div class="rating-holder">
-                    <ul class="star-rating list-unstyled justify-end" data-render="course.rating.stars">
-                      <li>
-                        <span class="fas fa-star"><span class="sr-only">star</span></span>
-                      </li>
-                      <li>
-                        <span class="fas fa-star"><span class="sr-only">star</span></span>
-                      </li>
-                      <li>
-                        <span class="fas fa-star"><span class="sr-only">star</span></span>
-                      </li>
-                      <li>
-                        <span class="fas fa-star"><span class="sr-only">star</span></span>
-                      </li>
-                      <li>
-                        <span class="fas fa-star"><span class="sr-only">star</span></span>
-                      </li>
-                    </ul>
-                    <strong class="element-block text-right subtitle fw-normal" data-bind="course.rating.reviewText">(2 Reviews)</strong>
-                  </div>
-                </div>
-              </header>
-
-              <div class="aligncenter content-aligncenter">
-                <img data-bind-attr="src:course.heroImage,alt:course.title" src="http://placehold.it/828x430" alt="image description" />
-              </div>
-
-              <h3 class="content-h3" data-bind="course.description.heading">Course Description</h3>
-              <div data-render="course.description.paragraphs">
-                <p>Leverage agile frameworks ...</p>
-                <p>Encyclopaedia galactica ...</p>
-              </div>
-
-              <h3 class="content-h3" data-bind="course.learn.heading">What you will learn</h3>
-              <p data-bind="course.learn.intro">Leverage agile frameworks ...</p>
-
-              <ul class="listDefault list-unstyled" data-render="course.learn.bullets">
-                <li>Thomas Edison may have been behind the invention.</li>
-                <li>Edison worked alongside partners...</li>
-                <li>Battling challenging cost targets...</li>
-              </ul>
-
-              <div data-render="course.learn.afterParagraphs">
-                <p>Quasar the only home...</p>
-              </div>
-
-              <h2 data-bind="course.curriculum.heading">Carriculam</h2>
-              <div data-render="course.curriculum.sections">
-                <!-- JS burayı bootstrap collapse yapısıyla dolduracak -->
-              </div>
-
-              <div class="bookmarkFoot">
-                <div class="bookmarkCol">
-                  <ul class="socail-networks list-unstyled" data-render="course.share">
-                    <li>
-                      <a href="#" class="facebook"><span class="fab fa-facebook-f"></span></a>
-                    </li>
-                    <li>
-                      <a href="#" class="twitter"><span class="fab fa-twitter"></span></a>
-                    </li>
-                    <li>
-                      <a href="#" class="google"><span class="fab fa-google-plus-g"></span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span class="fas fa-plus"></span></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="bookmarkCol text-right">
-                  <a href="#" class="btn btn-theme btn-warning text-uppercase fw-bold" data-bind="course.bookmarkText"> Bookmark this course </a>
-                </div>
-              </div>
-
-              <h2 data-bind="course.instructorBox.heading">About Instructor</h2>
-              <div class="instructorInfoBox">
-                <div class="alignleft">
-                  <a data-bind-attr="href:course.instructorBox.link" href="instructor-single.html">
-                    <img data-bind-attr="src:course.instructorBox.avatar,alt:course.instructorBox.name" src="http://placehold.it/80x80" alt="Merry Jhonson" />
-                  </a>
-                </div>
-                <div class="description-wrap">
-                  <h3 class="fw-normal">
-                    <a data-bind-attr="href:course.instructorBox.link" href="instructor-single.html" data-bind="course.instructorBox.name"> Merry Jhonson </a>
-                  </h3>
-                  <h4 class="fw-normal" data-bind="course.instructorBox.title">Back-end Developer</h4>
-                  <p data-bind="course.instructorBox.bio">Encyclopaedia galactica ...</p>
-                  <a href="#" class="btn btn-default font-lato fw-semi text-uppercase" data-bind="course.instructorBox.buttonText">View Profile</a>
-                </div>
-              </div>
-
-              <h2 data-bind="course.reviews.heading">Reviews</h2>
-              <h3 class="h6 fw-semi" data-bind="course.reviews.subheading">There are 2 reviews on this course</h3>
-
-              <ul class="list-unstyled reviewsList" data-render="course.reviews.items">
-                <!-- JS dolduracak -->
-              </ul>
-
-              <!-- Review form aynen statik kalsın -->
-              <form action="#" class="reviesSubmissionForm">
-                <h2 class="text-noCase">Add a Review</h2>
-                <p>Your email address will not be published. Required fields are marked <span class="required">*</span></p>
-                <div class="form-group">
-                  <span class="formLabel fw-normal font-lato no-shrink">Your Rating</span>
-                  <ul class="star-rating list-unstyled">
-                    <li>
-                      <input type="checkbox" id="rate1" class="customFormReset" /><label for="rate1" class="fas fa-star"><span class="sr-only">star</span></label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="rate2" class="customFormReset" /><label for="rate2" class="fas fa-star"><span class="sr-only">star</span></label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="rate3" class="customFormReset" /><label for="rate3" class="fas fa-star"><span class="sr-only">star</span></label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="rate4" class="customFormReset" /><label for="rate4" class="fas fa-star"><span class="sr-only">star</span></label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="rate5" class="customFormReset" /><label for="rate5" class="fas fa-star"><span class="sr-only">star</span></label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="form-group">
-                  <label for="rview" class="formLabel fw-normal font-lato no-shrink">Your Review <span class="required">*</span></label>
-                  <textarea id="rview" class="form-control element-block"></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="name" class="formLabel fw-normal font-lato no-shrink">Name <span class="required">*</span></label>
-                  <input type="text" id="name" class="form-control element-block" />
-                </div>
-                <div class="form-group">
-                  <label for="E-posta" class="formLabel fw-normal font-lato no-shrink">E-posta <span class="required">*</span></label>
-                  <input type="email" id="E-posta" class="form-control element-block" />
-                </div>
-                <button type="submit" class="btn btn-theme btn-warning text-uppercase font-lato fw-bold">Submit</button>
-              </form>
-            </article>
-
-            <aside class="col-xs-12 col-md-3" id="sidebar">
-              <section class="widget widget_box widget_course_select">
-                <header class="widgetHead text-center bg-theme">
-                  <h3 class="text-uppercase" data-bind="sidebar.takeCourse.heading">Take This Course</h3>
-                </header>
-                <strong class="price element-block font-lato" data-label="price:" data-bind="sidebar.takeCourse.price">£39.00</strong>
-                <ul class="list-unstyled font-lato" data-render="sidebar.takeCourse.meta">
-                  <li><i class="far fa-user icn no-shrink"></i> 199 Students</li>
-                </ul>
-              </section>
-
-              <section class="widget widget_categories">
-                <h3 data-bind="sidebar.categories.heading">Course Categories</h3>
-                <ul class="list-unstyled text-capitalize font-lato" data-render="sidebar.categories.items">
-                  <li class="cat-item cat-item-1"><a href="#">Business</a></li>
-                </ul>
-              </section>
-
-              <section class="widget widget_intro">
-                <h3 data-bind="sidebar.intro.heading">Course Intro</h3>
-                <div class="aligncenter overlay">
-                  <a data-bind-attr="href:sidebar.intro.videoUrl" href="https://www.youtube.com/embed/9bZkp7q19f0?autoplay=1" class="btn-play far fa-play-circle lightbox fancybox.iframe"></a>
-                  <img data-bind-attr="src:sidebar.intro.thumb,alt:sidebar.intro.heading" src="http://placehold.it/260x220" alt="image description" />
-                </div>
-              </section>
-
-              <section class="widget widget_popular_posts">
-                <h3 data-bind="sidebar.popular.heading">Popular Courses</h3>
-                <ul class="widget-cources-list list-unstyled" data-render="sidebar.popular.items">
-                  <li>
-                    <a href="course-single.html">
-                      <div class="alignleft">
-                        <img src="http://placehold.it/60x60" alt="image description" />
-                      </div>
-                      <div class="description-wrap">
-                        <h4>Introduction to Mobile Apps Development</h4>
-                        <strong class="price text-primary element-block font-lato text-uppercase">$99.00</strong>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </section>
-
-              <nav class="widget widget_tags">
-                <h3 data-bind="sidebar.tags.heading">Tags</h3>
-                <ul class="list-unstyled tag-clouds font-lato" data-render="sidebar.tags.items">
-                  <li><a href="#">Future</a></li>
-                </ul>
-              </nav>
-            </aside>
+          <div class="form-group">
+            <label for="rview" class="formLabel fw-normal font-lato no-shrink">Your Review <span class="required">*</span></label>
+            <textarea id="rview" class="form-control element-block"></textarea>
           </div>
+
+          <div class="form-group">
+            <label for="name" class="formLabel fw-normal font-lato no-shrink">Name <span class="required">*</span></label>
+            <input type="text" id="name" class="form-control element-block">
+          </div>
+
+          <div class="form-group">
+            <label for="E-posta" class="formLabel fw-normal font-lato no-shrink">E-posta <span class="required">*</span></label>
+            <input type="email" id="E-posta" class="form-control element-block">
+          </div>
+
+          <button type="submit" class="btn btn-theme btn-warning text-uppercase font-lato fw-bold">Submit</button>
+        </form>
+      </article>
+
+      <!-- sidebar -->
+      <aside class="col-xs-12 col-md-3" id="sidebar">
+        <div id="js-sidebar"></div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ===================== -->
+  <!-- TEMPLATES (gizli)     -->
+  <!-- ===================== -->
+
+  <!-- meta card (Instructor / Category gibi) -->
+  <template id="tpl-meta-card">
+    <div class="d-col">
+      <div class="post-author">
+        <div class="alignleft no-shrink" data-role="left"></div>
+        <div class="description-wrap">
+          <h2 class="author-heading"><a href="#" data-role="labelLink">Label</a></h2>
+          <h3 class="author-heading-subtitle text-uppercase" data-role="value">VALUE</h3>
         </div>
-      </main>
+      </div>
+    </div>
+  </template>
+
+  <!-- curriculum section -->
+  <template id="tpl-curriculum-section">
+    <section class="sectionRow">
+      <h2 class="h6 text-uppercase fw-semi rowHeading" data-role="sectionTitle"></h2>
+      <div class="panel-group sectionRowPanelGroup" data-role="accordion" role="tablist" aria-multiselectable="true"></div>
+    </section>
+  </template>
+
+  <!-- curriculum item/panel -->
+  <template id="tpl-curriculum-item">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" data-role="heading">
+        <h3 class="panel-title fw-normal">
+          <a class="accOpener" role="button" data-toggle="collapse" data-parent="" href="" aria-expanded="false" aria-controls="">
+            <span class="accOpenerCol" data-role="leftCol"></span>
+            <span class="accOpenerCol hd-phone" data-role="rightCol"></span>
+          </a>
+        </h3>
+      </div>
+      <div class="panel-collapse collapse" role="tabpanel" aria-labelledby="" data-role="collapse">
+        <div class="panel-body" data-role="body"></div>
+      </div>
+    </div>
+  </template>
+
+  <!-- sidebar widgets wrapper template değil, JS string/array ile kuracak -->
+</main>
+
+<!-- Body sonunda (jquery.js ve plugins.js yüklendikten sonra) ekle: -->
+<script src="js/course-single.js"></script>
 
       <!-- footer area container -->
       <div class="footer-area bg-dark text-gray">
