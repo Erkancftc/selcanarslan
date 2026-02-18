@@ -1,246 +1,193 @@
 {
-  "hero": {
-    "title": "Eğitim Detayı",
-    "backgroundImage": "images/banners/course-hero.jpg",
-    "description":"eğitim 1"
-  },
-  "breadcrumb": [
-    { "label": "Anasayfa", "href": "index.html" },
-    { "label": "Eğitimler", "href": "courses-list.html" },
-    { "label": "Koçluk ICF Seviye 1", "active": true }
-  ],
-
-  "course": {
+  "heading": {
     "title": "Koçluk ICF Seviye 1",
-    "metaCards": [
-      {
+    "backgroundImage": "url('images/banner/courses-banner.jpg')"
+  },
+  "breadcrumb": {
+    "listItems": ["Anasayfa", "Kurs", "Koçluk ICF Seviye 1"]
+  },
+  
+  "page": {
+    "id": "kocluk-icf-seviye-1",
+    "slug": "kocluk-icf-seviye-1",
+    "template": "course-single"
+  },
+
+  "seo": {
+    "title": "Koçluk ICF Seviye 1",
+    "description": "ICF Seviye 1 Koçluk Eğitimi Akreditasyonuna Giriş ve başvuru şartları, faydaları ve süreç bilgileri."
+  },
+
+  "content": {
+    "mainTitle": "Koçluk ICF Seviye 1",
+
+    "viewHeader": {
+      "author": {
         "label": "Eğitmen",
-        "href": "about.html",
-        "value": "Selcan Arslan",
-        "left": { "type": "avatar", "src": "images/coach01.jpg", "alt": "Selcan Arslan", "href": "about.html" }
+        "name": "Selcan Arslan",
+        "link":"about.html",
+        "image": {
+          "src": "images/Selcan-Arslan.jpg",
+          "alt": "Eğitmen Selcan Arslan"
+        }
       },
-      {
+      "category": {
         "label": "Kategori",
-        "href": "courses-list.html?cat=kocluk",
-        "value": "Profesyonel Koçluk",
-        "left": { "type": "icon", "className": "far fa-bookmark" }
+        "value": "Programın Dili"
+      },
+      "rating": {
+        "value": 5,
+        "totalReviews": 5
       }
-    ],
-    "rating": {
-      "stars": 5,
-      "reviewsText": "(2 Reviews)"
     },
 
-    "mainImage": {
-      "src": "images/courses/course-main.jpg",
-      "alt": "Koçluk eğitimi"
+    "heroImage": {
+      "src": "images/kurslar/seviye1.jpg",
+      "alt": "Koçluk ICF Seviye 1"
     },
 
-    "descriptionTitle": "Eğitim Açıklaması",
-    "description": ["Bu eğitim, koçluk temellerini ve pratik uygulamaları sistematik şekilde öğretir.", "Gerçek vaka örnekleri ve yapılandırılmış egzersizlerle ilerlersin."],
-
-    "learnTitle": "Bu eğitimde neler öğreneceksiniz?",
-    "learnIntro": "Aşağıdaki başlıklar, eğitim boyunca adım adım işlenecek ana yetkinlikleri özetler:",
-    "learnList": ["Koçluk görüşmesi yapısı (açılış, hedef, derinleşme, aksiyon)", "Güçlü soru sorma teknikleri", "Aktif dinleme ve yansıtma", "Hedef belirleme ve takip planı", "Geri bildirim ve ölçümleme"],
-    "afterLearn": {
-      "html": "<p><strong>Not:</strong> İçerik, ihtiyaçlara göre kurum eğitimlerine uyarlanabilir.</p>"
-    },
-
-    "curriculumTitle": "Müfredat",
-    "curriculumSections": [
+    "blocks": [
       {
-        "title": "Section-1: Giriş ve Temeller",
+        "type": "heading",
+        "level": 3,
+        "text": "Koçluk ICF Seviye 1"
+      },
+      {
+        "type": "paragraph",
+        "text": "ICF Seviye 1 Koçluk Eğitimi Akreditasyonuna Giriş Seviye 1 koçluk eğitimi, koç adaylarına temel becerileri kazandırır ve onları ICF Associate Certified Coach (ACC) unvanına giden net bir yol haritasıyla buluşturur. Seviye 1 akreditasyonu, dünya genelinde üst düzey koçluk eğitimi sunan ve ICF tarafından tanınan seçkin eğitim sağlayıcıları arasına katılmanızı sağlar; böylece kurumunuzun güvenilirliği ve erişim gücü artar."
+      },
+      {
+        "type": "list",
+        "intro": "Seviye 1 akreditasyonuna başvurabilmek için, koçluk eğitimi programınızın her bir katılımcı için aşağıdaki şartları sağlaması gerekir:",
+        "items": [
+          "60 ila 124 saat arasında koçluğa özgü (coach-specific) eğitim teması saati,",
+          "Beş koçluk oturumunun gözlemlenmesi ve her biri için yazılı geri bildirim verilmesi,",
+          "En az üç aylık bir süreye yayılmış toplam 10 saat mentör koçluk,",
+          "ACC minimum yetkinlik seviyesinde bir final performans değerlendirmesi."
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "ICF Seviye 1 Akreditasyonunun Faydaları"
+      },
+      {
+        "type": "paragraph",
+        "text": "ICF Seviye 1 akreditasyonunu kazanmak, potansiyel öğrencilerinize ve iş ortaklarınıza güçlü bir mesaj verir: Programınız, temel koçluk eğitimi için belirlenen titiz ve uluslararası düzeyde tanınan standartları karşılamaktadır. Ancak faydaları bununla sınırlı değildir."
+      },
+      {
+        "type": "list",
+        "items": ["ACC profesyonel kimliğin “resmi başlangıcıdır", "ICF akreditasyonu 140’tan fazla ülkede tanınmaktadır. Bu da erişim alanınızı genişletmenizi ve dünyanın dört bir yanından öğrencilerin katılımını mümkün kılar.", "Bu aşamada önemli olan mükemmel koç olmak değil, tutarlı koç olmak."]
+      },
+      {
+        "type": "paragraph",
+        "text": "ICF Seviye 1 programlarından mezun olanlar, ACC unvanına Seviye 1 Yolu (Level 1 Pathway) üzerinden başvurabilir. Bu yol, diğer belgelendirme süreçlerine kıyasla daha basit ve daha akıcıdır. Bu avantaj, potansiyel öğrenciler için oldukça caziptir ve programınız için güçlü bir satış argümanı oluşturabilir."
+      },
+      {
+        "type": "paragraph",
+        "text": "ICF Seviye 1 akreditasyonunu almak; müfredat içeriği, eğitim kalitesi ve etik standartlarla ilgili katı kriterleri karşılamanızı gerektirir. Bu da yüksek kaliteli eğitim uygulamalarını sürdürmenizi sağlar ve öğrenciler için daha iyi öğrenme çıktıları ortaya çıkarır."
+      },
+      {
+        "type": "paragraph",
+        "text": "Akreditasyon süreci düzenli gözden geçirme ve değerlendirmeler içerir. Bu da koçluk programlarınızı sektör standartları, ICF’in Temel Yetkinlikleri ve mentor ile öğrenci geri bildirimleri doğrultusunda sürekli güncellemenizi ve geliştirmenizi teşvik eder. Ayrıca sizi desteklemeye istekli bir meslektaş ağına erişim imkânı da sunar."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Önemli Bilgiler"
+      },
+      {
+        "type": "accordion",
         "items": [
           {
-            "title": "Eğitime hoş geldiniz",
-            "leadIconClass": "fas fa-chevron-circle-right accOpenerIcn",
-            "iconClass": "fas fa-play-circle inlineIcn",
-            "badge": { "text": "Video", "className": "label-primary" },
-            "previewTag": "preview",
-            "duration": "17 Min",
-            "body": "Programın yapısı, hedefleri ve çalışma düzeni."
+            "title": "Akreditasyon Maliyeti",
+            "content": "60-75 saat = 2.000 USD, 76+ saat = 2.500 USD"
           },
           {
-            "title": "Koçluk nedir / ne değildir?",
-            "iconClass": "far fa-file inlineIcn",
-            "badge": { "text": "free", "className": "label-success" },
-            "duration": "25 Min",
-            "body": ["Koçluk, danışmanlık ve terapi farkları.", "Etik çerçeve ve sınırlar."]
-          }
-        ]
-      },
-      {
-        "title": "Section-2: Koçluk Görüşmesi Akışı",
-        "items": [
-          {
-            "title": "Görüşme açılışı ve kontrat",
-            "iconClass": "fas fa-play-circle inlineIcn",
-            "duration": "22 Min",
-            "body": "Görüşme hedefi, roller, gizlilik ve çerçeve oluşturma."
+            "title": "Başlangıç Tarihi",
+            "content": "Akreditasyon üç yıl geçerlidir."
           },
           {
-            "title": "Hedef belirleme ve netleştirme",
-            "iconClass": "fas fa-puzzle-piece inlineIcn",
-            "badge": { "text": "Quiz", "className": "label-primary" },
-            "duration": "18 Min",
-            "body": "SMART hedefler, ölçülebilirlik ve takip."
-          }
-        ]
-      },
-      {
-        "title": "Section-3: Aktif Dinleme",
-        "items": [
-          {
-            "title": "Dinleme seviyeleri",
-            "iconClass": "fas fa-play-circle inlineIcn",
-            "duration": "20 Min",
-            "body": "İçerik dinleme, duygu dinleme, niyet dinleme."
-          }
-        ]
-      },
-      {
-        "title": "Section-4: Güçlü Sorular",
-        "items": [
-          {
-            "title": "Soru tipleri ve örnek kalıplar",
-            "iconClass": "far fa-file inlineIcn",
-            "badge": { "text": "Seminer", "className": "label-warning" },
-            "duration": "48 Min",
-            "body": { "html": "<p>Kapalı sorular yerine <em>açıcı</em> sorularla derinleşme.</p>" }
-          }
-        ]
-      },
-      {
-        "title": "Section-5: Duygu ve İnanç Çalışmaları",
-        "items": [
-          {
-            "title": "Sınırlayıcı inançları yakalama",
-            "iconClass": "fas fa-play-circle inlineIcn",
-            "duration": "28 Min",
-            "body": "Varsayım testleri ve yeniden çerçeveleme."
-          }
-        ]
-      },
-      {
-        "title": "Section-6: Aksiyon ve Sorumluluk",
-        "items": [
-          {
-            "title": "Aksiyon planı tasarımı",
-            "iconClass": "fas fa-play-circle inlineIcn",
-            "duration": "24 Min",
-            "body": "Somut adımlar, engeller ve destek mekanizmaları."
-          }
-        ]
-      },
-      {
-        "title": "Section-7: Kapanış ve Değerlendirme",
-        "items": [
-          {
-            "title": "Görüşme kapanışı",
-            "iconClass": "far fa-file inlineIcn",
-            "duration": "15 Min",
-            "body": "Özet, öğrenim, takip planı ve kapanış ritüeli."
+            "title": "Gerekli Standartlar",
+            "content": "Yedi temel standart karşılanmalıdır."
           }
         ]
       }
     ],
 
-    "bookmark": {
-      "enabled": true,
-      "socials": [
-        { "href": "#", "className": "facebook", "iconClass": "fab fa-facebook-f" },
-        { "href": "#", "className": "twitter", "iconClass": "fab fa-twitter" },
-        { "href": "#", "className": "google", "iconClass": "fab fa-google-plus-g" },
-        { "href": "#", "iconClass": "fas fa-plus" }
-      ],
-      "button": { "href": "#", "text": "Eğitimi Kaydet" }
+    "instructor": {
+      "name": "Selcan Arslan",
+      "title": "Sosyolog - Eğitim Uzmanı",
+      "image": {
+        "src": "images/Selcan-Arslan.jpg",
+        "alt": "Selcan Arslan"
+      },
+      "bio": "Uzmanlık alanı koçluk eğitimi ve sosyal bilimler."
+    },
+
+    "reviews": {
+      "total": 2,
+      "items": [
+        {
+          "author": "Lavin Duster",
+          "date": "2016-03-07",
+          "rating": 5,
+          "text": "Eğitim oldukça tatmin ediciydi."
+        },
+        {
+          "author": "Tim Cook",
+          "date": "2016-03-05",
+          "rating": 5,
+          "text": "İçerik çok açıklayıcıydı."
+        }
+      ]
     }
-  },
-
-  "instructor": {
-    "enabled": true,
-    "sectionTitle": "Eğitmen Hakkında",
-    "profileHref": "about.html",
-    "avatar": "images/coach01.jpg",
-    "name": "Selcan Arslan",
-    "title": "Profesyonel Koç / Eğitmen",
-    "bio": "İletişim, zaman yönetimi, takım çalışması ve koçluk alanlarında eğitimler verir.",
-    "button": { "href": "about.html", "text": "Profili Gör", "enabled": true }
-  },
-
-  "reviews": {
-    "sectionTitle": "Yorumlar",
-    "formEnabled": true,
-    "items": [
-      {
-        "name": "Lavin Duster",
-        "profileHref": "instructor-single.html",
-        "avatar": "images/reviews/r1.jpg",
-        "datetime": "2016-03-07",
-        "dateText": "March 7, 2016",
-        "stars": 5,
-        "text": "Çok sistemli ve uygulamalı bir eğitimdi. Özellikle güçlü soru örnekleri inanılmaz işe yaradı."
-      },
-      {
-        "name": "Tim Cook",
-        "profileHref": "instructor-single.html",
-        "avatar": "images/reviews/r2.jpg",
-        "datetime": "2016-03-05",
-        "dateText": "March 5, 2016",
-        "stars": 5,
-        "text": "Beklediğimden daha pratik geçti. Aksiyon planı bölümü çok iyiydi."
-      }
-    ]
   },
 
   "sidebar": {
-    "takeCourse": {
-      "enabled": true,
-      "title": "Bu Eğitime Katıl",
-      "price": "₺14.900",
-      "features": [
-        { "iconClass": "far fa-user", "text": "199 Katılımcı" },
-        { "iconClass": "far fa-clock", "text": "Süre: 30 gün" },
-        { "iconClass": "fas fa-bullhorn", "text": "Ders: 10" },
-        { "iconClass": "far fa-play-circle", "text": "Video: 12 saat" },
-        { "iconClass": "far fa-address-card", "text": "Katılım Sertifikası" }
-      ]
+    "courseInfo": {
+      "price": "£39.00",
+      "students": 199,
+      "duration": "30 days",
+      "lectures": 10,
+      "videoHours": 12,
+      "certificate": true
     },
-    "categories": {
-      "enabled": true,
-      "title": "Eğitim Kategorileri",
-      "items": [
-        { "label": "Business", "href": "#", "active": false },
-        { "label": "Design", "href": "#", "active": true },
-        { "label": "Programing Language", "href": "#", "active": false },
-        { "label": "Photography", "href": "#", "active": false }
-      ]
+
+    "categories": [
+      "Business",
+      "Design",
+      "Programing Language",
+      "Photography",
+      "Language",
+      "Life Style",
+      "IT & Software"
+    ],
+
+    "introVideo": {
+      "url": "http://www.youtube.com/embed/9bZkp7q19f0?autoplay=1",
+      "thumbnail": "http://placehold.it/260x220"
     },
-    "intro": {
-      "enabled": true,
-      "title": "Eğitim Tanıtımı",
-      "videoHref": "https://www.youtube.com/embed/9bZkp7q19f0?autoplay=1",
-      "image": "images/courses/intro.jpg",
-      "alt": "Course intro"
-    },
-    "popularCourses": {
-      "enabled": true,
-      "title": "Popüler Eğitimler",
-      "items": [
-        { "href": "course-single-temp.html", "image": "images/coach02.jpg", "title": "Koçluk ICF Seviye 1", "price": "₺14.900", "priceClass": "text-primary" },
-        { "href": "course-single-temp.html", "image": "images/coach03.jpg", "title": "Koçluk ICF Seviye 2", "price": "₺16.900", "priceClass": "text-success" },
-        { "href": "course-single-temp.html", "image": "images/coach04.jpg", "title": "NLP Uygulama Eğitimi", "price": "₺7.900", "priceClass": "text-primary" }
-      ]
-    },
-    "tags": {
-      "enabled": true,
-      "title": "Etiketler",
-      "items": [
-        { "label": "Future", "href": "#" },
-        { "label": "Science", "href": "#" },
-        { "label": "Education", "href": "#" },
-        { "label": "Technology", "href": "#" }
-      ]
-    }
+
+    "popularCourses": [
+      {
+        "title": "Introduction to Mobile Apps Development",
+        "price": "$99.00"
+      },
+      {
+        "title": "Become a Professional Film Maker",
+        "price": "Free"
+      }
+    ],
+
+    "tags": [
+      "Future",
+      "Science",
+      "Coding",
+      "Education",
+      "Technology"
+    ]
   }
 }
+
+

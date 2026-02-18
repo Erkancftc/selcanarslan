@@ -1,17 +1,17 @@
 {
   "heading": {
-    "title":"ICF Seviye 1 Koçluk Eğitimi",
-    "backgroundImage":"url('images/icf-1.jpg')"
+    "title":"Koçluk ICF Seviye 1",
+    "backgroundImage":"url('images/banner/courses-banner.jpg')"
   },
   "breadcrumb":{
-    "listItems": ["Anasayfa", "Eğitim", "ICF Seviye 1 Koçluk Eğitimi"]
+    "listItems": ["Anasayfa", "Kurs", "Koçluk ICF Seviye 1"]
   },
-  "head":"ICF Seviye 1 Koçluk Eğitimi",
+  "head":"Koçluk ICF Seviye 1",
   "teacherArea": {
     "portrait" : "images/Selcan-Arslan.jpg",
-    "teacherTitle" : "PCC Eğitmeni",
+    "teacherTitle" : "Eğitmen",
     "teacherName" : "Selcan Arslan",
-    "educationCat" : "koçluk",
+    "educationCat" : "Programın Dili",
     "stars" : 5,
     "reviews" : 2
   },
