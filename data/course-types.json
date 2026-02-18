@@ -1,4 +1,65 @@
 {
-  "slug":"icf-1",
-  ""
+  "heading": {
+    "title":"ICF Seviye 1 Koçluk Eğitimi",
+    "backgroundImage":"url('images/icf-1.jpg')"
+  },
+  "breadcrumb":{
+    "listItems": ["Anasayfa", "Eğitim", "ICF Seviye 1 Koçluk Eğitimi"]
+  },
+  "head":"ICF Seviye 1 Koçluk Eğitimi",
+  "teacherArea": {
+    "portrait" : "images/Selcan-Arslan.jpg",
+    "teacherTitle" : "PCC Eğitmeni",
+    "teacherName" : "Selcan Arslan",
+    "educationCat" : "koçluk",
+    "stars" : 5,
+    "reviews" : 2
+  },
+  "educationArea": {
+    "image": "images/icf-1.jpg",
+    "desc1": [
+      { "type": "h3","class" :"content-h3" ,"text": "ICF Seviye 1 Programının Amacı Nedir?" },
+      { "type": "p", "text": "ICF Seviye 1 eğitimi, katılımcılara:" },
+      { "type": "ul", "class": "listDefault list-unstyled", "items": ["ICF’in 8 temel koçluk yetkinliğini kazandırmayı,", "Profesyonel koçluk bakış açısını kazandırmayı,", "Etik kurallar çerçevesinde koçluk yapmayı öğretmeyi amaçlar."] },
+      { "type": "p", "text": "Bu eğitim, katılımcının hem kişisel gelişimini destekler hem de koçluk mesleğine sağlam bir temel atmasını sağlar." }
+    ],
+    "desc2": [
+      { "type": "h3", "text": "ICF Seviye 1 Eğitimi İçeriğinde Neler Var?" },
+      { "type": "p", "text": "Seviye 1 kapsamında aşağıdaki unsurlar yer alır:" },
+      {
+        "type": "ul",
+        "class": "listDefault list-unstyled",
+        "items": ["Minimum 60 saatlik ICF onaylı eğitim", "ICF 8 temel yetkinliği odaklı teorik ve uygulamalı içerikler", "Etik kurallar ve profesyonel duruş eğitimi", "10 saat mentor koçluk", "Koçluk pratiği ve süpervizyonlar", "Değerlendirme süreci: Koçluk kayıtlarının analizi ve yazılı sınav"]
+      }
+    ],
+    "desc3": [
+      { "type": "h3", "text": "Kimler ICF Seviye 1 Almalı?" },
+      {
+        "type": "ul",
+        "class": "listDefault list-unstyled",
+        "items": [
+          "Koçluk mesleğine profesyonel olarak başlamak isteyenler",
+          "Kişisel gelişim alanında uzmanlaşmak isteyen danışmanlar, terapistler, eğitmenler",
+          "İnsan kaynakları, liderlik ve yöneticilik alanlarında koçluk becerilerini kullanmak isteyen profesyoneller",
+          "Uluslararası geçerliliği olan bir koçluk unvanı hedefleyen herkes"
+        ]
+      }
+    ],
+    "desc4": [
+      { "type": "h3", "text": "ICF Seviye 1 Sonrası Ne Olur?" },
+      { "type": "p", "text": "Eğitimi tamamlayan bireyler:" },
+      {
+        "type": "ul",
+        "class": "listDefault list-unstyled",
+        "items": [
+          "ACC (Associate Certified Coach) unvanına başvuru hakkı kazanır",
+          "Profesyonel koç olarak çalışmaya başlayabilir",
+          "Uluslararası tanınırlığa sahip bir ICF akreditasyonuna sahip olur",
+          "Koçlukta etik ve etkili bir şekilde yol almaya hazır hale gelir"
+        ]
+      }
+    ]
+  }
+
+
 }

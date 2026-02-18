@@ -147,10 +147,10 @@
       <!-- contain main informative part of the site -->
       <main id="main">
   <!-- heading banner -->
-  <header class="heading-banner text-white bgCover" id="js-hero" style="background-image: url(http://placehold.it/1920x181);">
+  <header class="heading-banner text-white bgCover" id="headingBg" style="background-image: url(http://placehold.it/1920x181);">
     <div class="container holder">
       <div class="align">
-        <h1 id="js-hero-title">Course Single</h1>
+        <h1 id="headingTitle">Course Single</h1>
       </div>
     </div>
   </header>
@@ -158,7 +158,7 @@
   <!-- breadcrumb nav -->
   <nav class="breadcrumb-nav">
     <div class="container">
-      <ol class="breadcrumb" id="js-breadcrumb"></ol>
+      <ul class="breadcrumb" id="js-breadcrumb"></ul>
     </div>
   </nav>
 
@@ -170,27 +170,51 @@
         <h1 class="content-h1 fw-semi" id="js-course-title">...</h1>
 
         <!-- view header -->
-        <header class="view-header row" id="js-view-header">
-          <div class="col-xs-12 col-sm-9 d-flex" id="js-meta-left"></div>
-
-          <div class="col-xs-12 col-sm-3">
-            <div class="rating-holder">
-              <ul class="star-rating list-unstyled justify-end" id="js-rating-stars"></ul>
-              <strong class="element-block text-right subtitle fw-normal" id="js-rating-reviews"></strong>
-            </div>
-          </div>
+        <header class="view-header row">
+							<div class="col-xs-12 col-sm-9 d-flex">
+								<div class="d-col">
+									<!-- post author -->
+									<div class="post-author">
+										<div class="alignleft no-shrink rounded-circle">
+											<a href="#"><img id="js-hero-image-wrap" src="images/img07.jpg" class="rounded-circle" alt="image description"></a>
+										</div>
+										<div class="description-wrap">
+											<h2 id="js-hero-teacher-title" class="author-heading"><a href="#">Instructor</a></h2>
+											<h3 id="js-hero-teacher-name" class="author-heading-subtitle text-uppercase">lospher cooke</h3>
+										</div>
+									</div>
+								</div>
+								<div class="d-col">
+									<!-- post author -->
+									<div class="post-author">
+										<div class="alignleft no-shrink icn-wrap">
+											<i class="far fa-bookmark"></i>
+										</div>
+										<div class="description-wrap">
+											<h2 class="author-heading"><a href="#">Kategori</a></h2>
+											<h3 id="js-hero-educationCat" class="author-heading-subtitle text-uppercase">Programing language</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="rating-holder">
+									<ul class="star-rating list-unstyled justify-end">
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+									</ul>
+									<strong class="element-block text-right subtitle fw-normal">(2 Yorum)</strong>
+								</div>
+							</div>
         </header>
+        <div class="aligncenter content-aligncenter">
+          <img id="js-desc-img" src="#" alt="image description">
+        </div>
 
-        <div class="aligncenter content-aligncenter" id="js-hero-image-wrap"></div>
-
-        <h3 class="content-h3" id="js-desc-title">Course Description</h3>
-        <div id="js-description"></div>
-
-        <h3 class="content-h3" id="js-learn-title">What you will learn</h3>
-        <div id="js-learn-intro"></div>
-        <ul class="listDefault list-unstyled" id="js-learn-list"></ul>
-
-        <div id="js-after-learn"></div>
+        <div id="template"></div>
 
         <h2 id="js-curriculum-title">Carriculam</h2>
         <div id="js-curriculum"></div>
@@ -239,7 +263,100 @@
           <button type="submit" class="btn btn-theme btn-warning text-uppercase font-lato fw-bold">Submit</button>
         </form>
       </article>
-
+      <aside class="col-xs-12 col-md-3" id="sidebar">
+						<!-- widget course select -->
+						<section class="widget widget_box widget_course_select">
+							<header class="widgetHead text-center bg-theme">
+								<h3 class="text-uppercase">Take This Course</h3>
+							</header>
+							<strong class="price element-block font-lato" data-label="price:">£39.00</strong>
+							<ul class="list-unstyled font-lato">
+								<li><i class="far fa-user icn no-shrink"></i> 199 Students</li>
+								<li><i class="far fa-clock icn no-shrink"></i> Duration: 30 days</li>
+								<li><i class="fas fa-bullhorn icn no-shrink"></i> Lectures: 10</li>
+								<li><i class="far fa-play-circle icn no-shrink"></i> Video: 12 hours</li>
+								<li><i class="far fa-address-card icn no-shrink"></i> Certificate of Completion</li>
+							</ul>
+						</section>
+						<!-- widget categories -->
+						<section class="widget widget_categories">
+							<h3>Course Categories</h3>
+							<ul class="list-unstyled text-capitalize font-lato">
+								<li class="cat-item cat-item-1"><a href="#">Business</a></li>
+								<li class="cat-item active cat-item-2"><a href="#">Design</a></li>
+								<li class="cat-item cat-item-3"><a href="#">Programing Language</a></li>
+								<li class="cat-item cat-item-4"><a href="#">Photography</a></li>
+								<li class="cat-item cat-item-5"><a href="#">Language</a></li>
+								<li class="cat-item cat-item-6"><a href="#">Life Style</a></li>
+								<li class="cat-item cat-item-7"><a href="#">IT &amp; Software</a></li>
+							</ul>
+						</section>
+						<!-- widget intro -->
+						<section class="widget widget_intro">
+							<h3>Course Intro</h3>
+							<div class="aligncenter overlay">
+								<a href="http://www.youtube.com/embed/9bZkp7q19f0?autoplay=1" class="btn-play far fa-play-circle lightbox fancybox.iframe"></a>
+								<img src="#" alt="image description">
+							</div>
+						</section>
+						<!-- widget popular posts -->
+						<section class="widget widget_popular_posts">
+							<h3>Popular Courses</h3>
+							<!-- widget cources list -->
+							<ul class="widget-cources-list list-unstyled">
+								<li>
+									<a href="course-single.html">
+										<div class="alignleft">
+											<img src="#" alt="image description">
+										</div>
+										<div class="description-wrap">
+											<h4>Introduction to Mobile Apps Development</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">$99.00</strong>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="course-single.html">
+										<div class="alignleft">
+											<img src="#" alt="image description">
+										</div>
+										<div class="description-wrap">
+											<h4>Become a Professional Film Maker</h4>
+											<strong class="price text-success element-block font-lato text-uppercase">Free</strong>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="course-single.html">
+										<div class="alignleft">
+											<img src="#" alt="image description">
+										</div>
+										<div class="description-wrap">
+											<h4>Swift Programming For Beginners</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">$75.00</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- widget tags -->
+						<nav class="widget widget_tags">
+							<h3>Tags</h3>
+							<!-- tag clouds -->
+							<ul class="list-unstyled tag-clouds font-lato">
+								<li><a href="#">Future</a></li>
+								<li><a href="#">Science</a></li>
+								<li><a href="#">Coding</a></li>
+								<li><a href="#">Education</a></li>
+								<li><a href="#">Technology</a></li>
+							</ul>
+						</nav>
+					</aside>
+         <div class="col-lg-12 education">
+          <h1 id="title"></h1>
+          <p id="desc"></p>
+          <img src="" alt="" id="heroImage">
+        </div>
       <!-- sidebar -->
       <aside class="col-xs-12 col-md-3" id="sidebar">
         <div id="js-sidebar"></div>
@@ -293,7 +410,6 @@
 </main>
 
 <!-- Body sonunda (jquery.js ve plugins.js yüklendikten sonra) ekle: -->
-<script src="js/course-single.js"></script>
 
       <!-- footer area container -->
       <div class="footer-area bg-dark text-gray">
@@ -463,14 +579,16 @@
         </form>
       </div>
     </div>
+   
+
     <!-- include jQuery -->
     <script src="js/jquery.js"></script>
     <!-- include jQuery -->
     <script src="js/plugins.js"></script>
     <!-- include jQuery -->
     <script src="js/jquery.main.js"></script>
-    <script src="js/course-single.js"></script>
     <!-- include jQuery -->
     <script type="text/javascript" src="js/init.js"></script>
+    <script src="js/course-single copy.js"></script>
   </body>
 </html>
