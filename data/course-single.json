@@ -1,7 +1,8 @@
 {
   "hero": {
     "title": "Eğitim Detayı",
-    "backgroundImage": "images/banners/course-hero.jpg"
+    "backgroundImage": "images/banners/course-hero.jpg",
+    "description":"eğitim 1"
   },
   "breadcrumb": [
     { "label": "Anasayfa", "href": "index.html" },

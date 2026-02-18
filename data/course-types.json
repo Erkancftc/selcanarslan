@@ -1,158 +1,65 @@
 {
-  "slug": "course-single",
-  "hero": {
-    "title": "Eğitim Detayı",
-    "backgroundImage": "images/banners/course-hero.jpg"
+  "heading": {
+    "title":"ICF Seviye 1 Koçluk Eğitimi",
+    "backgroundImage":"url('images/icf-1.jpg')"
   },
-  "breadcrumb": [
-    { "label": "Anasayfa", "href": "index.html" },
-    { "label": "Eğitimler", "href": "courses-list.html" },
-    { "label": "Koçluk ICF Seviye 1", "active": true }
-  ],
-  "course": {
-    "title": "Koçluk ICF Seviye 1",
-    "metaCards": [
+  "breadcrumb":{
+    "listItems": ["Anasayfa", "Eğitim", "ICF Seviye 1 Koçluk Eğitimi"]
+  },
+  "head":"ICF Seviye 1 Koçluk Eğitimi",
+  "teacherArea": {
+    "portrait" : "images/Selcan-Arslan.jpg",
+    "teacherTitle" : "PCC Eğitmeni",
+    "teacherName" : "Selcan Arslan",
+    "educationCat" : "koçluk",
+    "stars" : 5,
+    "reviews" : 2
+  },
+  "educationArea": {
+    "image": "images/icf-1.jpg",
+    "desc1": [
+      { "type": "h3","class" :"content-h3" ,"text": "ICF Seviye 1 Programının Amacı Nedir?" },
+      { "type": "p", "text": "ICF Seviye 1 eğitimi, katılımcılara:" },
+      { "type": "ul", "class": "listDefault list-unstyled", "items": ["ICF’in 8 temel koçluk yetkinliğini kazandırmayı,", "Profesyonel koçluk bakış açısını kazandırmayı,", "Etik kurallar çerçevesinde koçluk yapmayı öğretmeyi amaçlar."] },
+      { "type": "p", "text": "Bu eğitim, katılımcının hem kişisel gelişimini destekler hem de koçluk mesleğine sağlam bir temel atmasını sağlar." }
+    ],
+    "desc2": [
+      { "type": "h3", "text": "ICF Seviye 1 Eğitimi İçeriğinde Neler Var?" },
+      { "type": "p", "text": "Seviye 1 kapsamında aşağıdaki unsurlar yer alır:" },
       {
-        "label": "Eğitmen",
-        "href": "about.html",
-        "value": "Selcan Arslan",
-        "left": { "type": "avatar", "src": "images/coach01.jpg", "alt": "Selcan Arslan", "href": "about.html" }
-      },
-      {
-        "label": "Kategori",
-        "href": "courses-list.html?cat=kocluk",
-        "value": "Profesyonel Koçluk",
-        "left": { "type": "icon", "className": "far fa-bookmark" }
+        "type": "ul",
+        "class": "listDefault list-unstyled",
+        "items": ["Minimum 60 saatlik ICF onaylı eğitim", "ICF 8 temel yetkinliği odaklı teorik ve uygulamalı içerikler", "Etik kurallar ve profesyonel duruş eğitimi", "10 saat mentor koçluk", "Koçluk pratiği ve süpervizyonlar", "Değerlendirme süreci: Koçluk kayıtlarının analizi ve yazılı sınav"]
       }
     ],
-    "rating": {
-      "stars": 5,
-      "reviewsText": "(2 Yorum)"
-    },
-
-    "mainImage": {
-      "src": "images/courses/course-main.jpg",
-      "alt": "Koçluk eğitimi"
-    },
-
-    "descriptionTitle": "Eğitim Açıklaması",
-    "description": ["Bu eğitim, koçluk temellerini ve pratik uygulamaları sistematik şekilde öğretir.", "Gerçek vaka örnekleri ve yapılandırılmış egzersizlerle ilerlersin."],
-
-    "learnTitle": "Bu eğitimde neler öğreneceksiniz?",
-    "learnIntro": "Aşağıdaki başlıklar, eğitim boyunca adım adım işlenecek ana yetkinlikleri özetler:",
-    "learnList": ["Koçluk görüşmesi yapısı (açılış, hedef, derinleşme, aksiyon)", "Güçlü soru sorma teknikleri", "Aktif dinleme ve yansıtma", "Hedef belirleme ve takip planı", "Geri bildirim ve ölçümleme"],
-    "afterLearn": {
-      "html": "<p><strong>Not:</strong> İçerik, ihtiyaçlara göre kurum eğitimlerine uyarlanabilir.</p>"
-    },
-
-    "curriculumTitle": "Müfredat",
-    "curriculumSections": [
+    "desc3": [
+      { "type": "h3", "text": "Kimler ICF Seviye 1 Almalı?" },
       {
-        "title": "Section-1: Giriş ve Temeller",
+        "type": "ul",
+        "class": "listDefault list-unstyled",
         "items": [
-          {
-            "title": "Eğitime hoş geldiniz",
-            "leadIconClass": "fas fa-chevron-circle-right accOpenerIcn",
-            "iconClass": "fas fa-play-circle inlineIcn",
-            "badge": { "text": "Video", "className": "label-primary" },
-            "previewTag": "preview",
-            "duration": "17 Min",
-            "body": "Programın yapısı, hedefleri ve çalışma düzeni."
-          },
-          {
-            "title": "Koçluk nedir / ne değildir?",
-            "iconClass": "far fa-file inlineIcn",
-            "badge": { "text": "free", "className": "label-success" },
-            "duration": "25 Min",
-            "body": ["Koçluk, danışmanlık ve terapi farkları.", "Etik çerçeve ve sınırlar."]
-          }
-        ]
-      },
-      {
-        "title": "Section-2: Koçluk Görüşmesi Akışı",
-        "items": [
-          {
-            "title": "Görüşme açılışı ve kontrat",
-            "iconClass": "fas fa-play-circle inlineIcn",
-            "duration": "22 Min",
-            "body": "Görüşme hedefi, roller, gizlilik ve çerçeve oluşturma."
-          },
-          {
-            "title": "Hedef belirleme ve netleştirme",
-            "iconClass": "fas fa-puzzle-piece inlineIcn",
-            "badge": { "text": "Quiz", "className": "label-primary" },
-            "duration": "18 Min",
-            "body": "SMART hedefler, ölçülebilirlik ve takip."
-          }
-        ]
-      },
-      {
-        "title": "Section-3: Aktif Dinleme",
-        "items": [
-          {
-            "title": "Dinleme seviyeleri",
-            "iconClass": "fas fa-play-circle inlineIcn",
-            "duration": "20 Min",
-            "body": "İçerik dinleme, duygu dinleme, niyet dinleme."
-          }
-        ]
-      },
-      {
-        "title": "Section-4: Güçlü Sorular",
-        "items": [
-          {
-            "title": "Soru tipleri ve örnek kalıplar",
-            "iconClass": "far fa-file inlineIcn",
-            "badge": { "text": "Seminer", "className": "label-warning" },
-            "duration": "48 Min",
-            "body": { "html": "<p>Kapalı sorular yerine <em>açıcı</em> sorularla derinleşme.</p>" }
-          }
-        ]
-      },
-      {
-        "title": "Section-5: Duygu ve İnanç Çalışmaları",
-        "items": [
-          {
-            "title": "Sınırlayıcı inançları yakalama",
-            "iconClass": "fas fa-play-circle inlineIcn",
-            "duration": "28 Min",
-            "body": "Varsayım testleri ve yeniden çerçeveleme."
-          }
-        ]
-      },
-      {
-        "title": "Section-6: Aksiyon ve Sorumluluk",
-        "items": [
-          {
-            "title": "Aksiyon planı tasarımı",
-            "iconClass": "fas fa-play-circle inlineIcn",
-            "duration": "24 Min",
-            "body": "Somut adımlar, engeller ve destek mekanizmaları."
-          }
-        ]
-      },
-      {
-        "title": "Section-7: Kapanış ve Değerlendirme",
-        "items": [
-          {
-            "title": "Görüşme kapanışı",
-            "iconClass": "far fa-file inlineIcn",
-            "duration": "15 Min",
-            "body": "Özet, öğrenim, takip planı ve kapanış ritüeli."
-          }
+          "Koçluk mesleğine profesyonel olarak başlamak isteyenler",
+          "Kişisel gelişim alanında uzmanlaşmak isteyen danışmanlar, terapistler, eğitmenler",
+          "İnsan kaynakları, liderlik ve yöneticilik alanlarında koçluk becerilerini kullanmak isteyen profesyoneller",
+          "Uluslararası geçerliliği olan bir koçluk unvanı hedefleyen herkes"
         ]
       }
     ],
-
-    "bookmark": {
-      "enabled": true,
-      "socials": [
-        { "href": "#", "className": "facebook", "iconClass": "fab fa-facebook-f" },
-        { "href": "#", "className": "twitter", "iconClass": "fab fa-twitter" },
-        { "href": "#", "className": "google", "iconClass": "fab fa-google-plus-g" },
-        { "href": "#", "iconClass": "fas fa-plus" }
-      ],
-      "button": { "href": "#", "text": "Eğitimi Kaydet" }
-    }
+    "desc4": [
+      { "type": "h3", "text": "ICF Seviye 1 Sonrası Ne Olur?" },
+      { "type": "p", "text": "Eğitimi tamamlayan bireyler:" },
+      {
+        "type": "ul",
+        "class": "listDefault list-unstyled",
+        "items": [
+          "ACC (Associate Certified Coach) unvanına başvuru hakkı kazanır",
+          "Profesyonel koç olarak çalışmaya başlayabilir",
+          "Uluslararası tanınırlığa sahip bir ICF akreditasyonuna sahip olur",
+          "Koçlukta etik ve etkili bir şekilde yol almaya hazır hale gelir"
+        ]
+      }
+    ]
   }
+
+
 }
