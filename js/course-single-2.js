@@ -417,7 +417,7 @@ fetch("data/course-single.json")
 
         facts.innerHTML = `
       <li><i class="far fa-user icn no-shrink"></i> ${esc(ci.students)} Katılımcı</li>
-      <li><i class="far fa-clock icn no-shrink"></i> Süre:: ${esc(ci.duration)}</li>
+      <li><i class="far fa-clock icn no-shrink"></i> Süre: ${esc(ci.duration)}</li>
       <li><i class="fas fa-bullhorn icn no-shrink"></i> Dersler: ${esc(ci.lectures)}</li>
       <li><i class="far fa-play-circle icn no-shrink"></i> Video: ${esc(ci.videoHours)} saat</li>
       <li><i class="far fa-address-card icn no-shrink"></i> ${ci.certificate ? "Sertifika" : "Sertifika Var"}</li>
