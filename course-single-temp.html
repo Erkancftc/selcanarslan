@@ -230,7 +230,9 @@
                 <div id="courseBlocksMount">
                   <!-- Buradan aşağıdaki tüm açıklama, list, accordion
              JS ile üretilebilir -->
-                </div>
+             
+            </div>
+            <div class="panel-group sectionRowPanelGroup" id="accordion"></div>
 
                 <!-- BOOKMARK FOOT -->
                 <div id="courseBookmarkFooter" class="bookmarkFoot">
@@ -283,6 +285,9 @@
               <aside class="col-xs-12 col-md-3" id="sidebar">
                 <!-- COURSE INFO -->
                 <section id="sbCourseInfo" class="widget widget_box widget_course_select">
+                  <header class="widgetHead text-center bg-theme">
+								<h3 class="text-uppercase">Eğitimi Satın Al</h3>
+							</header>
                   <strong id="sbPrice" class="price element-block font-lato"> £39.00 </strong>
 
                   <ul id="sbFacts" class="list-unstyled font-lato"></ul>
@@ -290,16 +295,54 @@
 
                 <!-- CATEGORIES -->
                 <section id="sbCategories" class="widget widget_categories">
+                  <h3>Eğitim Kategorileri</h3>
                   <ul id="sbCategoriesList" class="list-unstyled text-capitalize font-lato"></ul>
                 </section>
 
                 <!-- POPULAR -->
-                <section id="sbPopular" class="widget widget_popular_posts">
-                  <ul id="sbPopularList" class="widget-cources-list list-unstyled"></ul>
-                </section>
+                <section class="widget widget_popular_posts">
+							<h3>Popüler Eğitimler</h3>
+							<!-- widget cources list -->
+							<ul class="widget-cources-list list-unstyled">
+								<li>
+									<a href="course-single-temp.html">
+										<div class="alignleft large">
+											<img src="images/coach02.jpg" alt="image description">
+										</div>
+										<div class="description-wrap">
+											<h4>Koçluk ICF Seviye 1</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">$570.00</strong>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="course-single-temp.html">
+										<div class="alignleft large">
+											<img src="images/coach03.jpg" alt="image description">
+										</div>
+										<div class="description-wrap">
+											<h4>Koçluk ICF Seviye 2</h4>
+											<strong class="price text-success element-block font-lato text-uppercase">$570.00</strong>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="course-single-temp.html">
+										<div class="alignleft large">
+											<img src="images/coach04.jpg" alt="image description">
+										</div>
+										<div class="description-wrap">
+											<h4>NLP Uygulama Eğitimi</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">$275.00</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
 
                 <!-- TAGS -->
                 <nav id="sbTags" class="widget widget_tags">
+                  <h3>Etiketler</h3>
                   <ul id="sbTagsList" class="list-unstyled tag-clouds font-lato"></ul>
                 </nav>
               </aside>

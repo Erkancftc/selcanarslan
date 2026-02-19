@@ -98,18 +98,31 @@
       },
       {
         "type": "accordion",
+        "title": "Seviye 1 Akreditasyon için Başvuru Maliyeti",
         "items": [
           {
             "title": "Akreditasyon Maliyeti",
-            "content": "60-75 saat = 2.000 USD, 76+ saat = 2.500 USD"
+            "content": "60-75 İletişim Saati Olan Programlar = 2.000$ USD 76+ İletişim Saati Olan Programlar = 2.500$ USD Lütfen dikkat: Başvuru ücretleri iade edilmez ve akreditasyon onayını garanti etmez"
           },
           {
-            "title": "Başlangıç Tarihi",
-            "content": "Akreditasyon üç yıl geçerlidir."
+            "title": "Seviye 1 Akreditasyon Başlangıç Tarihi",
+            "content": "Seviye 1 akreditasyonunuz üç takvim yılı için geçerlidir ve başvurunun yapıldığı tarihte başlar.Akreditasyon onayından önce programınızdan bireyleri zaten mezun ettiyseniz, akreditasyonunuz en yeni mezunlara geriye dönük olarak uygulanabilir, yani bu mezunlar Seviye 1 koçluk eğitimini tamamlamışlardır."
           },
           {
             "title": "Gerekli Standartlar",
-            "content": "Yedi temel standart karşılanmalıdır."
+            "content": "ICF tarafından akredite edilen programların sadece — öne çıkmamasını sağlayarak küresel standartları yükseltmeye kararlıyız. Bu akreditasyon standartları, öğrencilere yatırımlarının başarılı bir kariyere doğru güçlü bir adım olduğuna dair güvence vererek, en yüksek kalitede koçluk programlarını garanti eder. ICF tarafından akredite olmak için, mükemmelliği sağlayan yedi temel standardı karşılamanız gerekir: Standart 1: Eğitim ve Öğrenme Programının Misyon ve Vizyonu. Standart 2: Yönetim, Organizasyon ve Ticari Operasyonlar. Standart 3: Etik, Dürüstlük ve Şeffaflık. Standart 4: Eğitim ve Öğretim. Standart 5: Öğretim ve Öğretim. Standart 6: Öğrenme Deneyimi ve Desteği. Standart 7: Değerlendirme, Değerlendirme ve Etkililik."
+          },
+          {
+            "title": "Seviye 1 Akreditasyon Süreci",
+            "content": "Akreditasyona başvurmak, programınızın gücünü kapsamlı bir inceleme yoluyla sergilemek, müfredatınızın, öğretim üyelerinizin, öğrenci desteğinizin, öğrenme çıktılarınızın ve sürekli iyileştirme taahhüdünüzün en yüksek standartları karşıladığını onaylamak için bir fırsattır. Programınızın mükemmelliğini doğrulamak ve koçluk endüstrisindeki kalıcı etkisini güvence altına almak için güçlü bir adımdır."
+          },
+          {
+            "title": "Başvurunuzu Gönderme",
+            "content": "İncelemek the Akreditasyon Standartları aşağıdakiler de dahil olmak üzere, başvurunuzu göndermeden önce tüm gereksinimleri karşıladığınızdan ve tüm belgeleri sağladığınızdan emin olmak için: Programın tamamını oluşturan tüm sınıfların ders listesi. Gözlemlenen bir koçluk oturumunun yazılı geri bildirimle kaydedilmesi. ACC düzeyinde yazılı geri bildirim ve kelime kelime transkript ile geçen bir öğrencinin performans değerlendirmesinin kaydedilmesi."
+          },
+          {
+            "title": "Başvurunuzun İncelenmesi",
+            "content": "Seviye 2 uygulaması için tipik inceleme süresi = 8-12 hafta. Başvurunuzu yaptıktan sonraki ilk iki hafta içinde başvurunuz minimum gereklilikleri karşıladığından emin olmak için incelenecektir. Seviye 1 akreditasyonu için şunları doğrularız: Uygulama gerekli program saati sayısını karşılar. Kuruluşunuzun PCC veya MCC sertifikasına sahip bir eğitim direktörü vardır. Performans değerlendirme kaydı ve transkripti uygulamaya dahil olup standartlarımıza uygundur. Bu ilk incelemeden sonra başvurunuz daha derin bir inceleme sürecinden geçecektir. Onay üzerine, resmi onayınızı ve ilgili belgeleri almadan önce 30 dakikalık bir akreditasyon onay görüşmesine katılmanız gerekecektir. Bu görüşmeler, ICF akreditasyonu isteyen kuruluşlarla uyumu sağlamak ve beklentileri belirlemek için proaktif bir yaklaşımdır."
           }
         ]
       }
@@ -146,22 +159,20 @@
 
   "sidebar": {
     "courseInfo": {
-      "price": "£39.00",
-      "students": 199,
-      "duration": "30 days",
+      "price": "$570.00",
+      "students": 50,
+      "duration": "30 gün",
       "lectures": 10,
       "videoHours": 12,
       "certificate": true
     },
 
     "categories": [
-      "Business",
-      "Design",
-      "Programing Language",
-      "Photography",
-      "Language",
-      "Life Style",
-      "IT & Software"
+      "Eğitim",
+      "Koçluk",
+      "Nefes Koçluğu",
+      "Liderlik",
+      "Kurumsal Yöneticilik"
     ],
 
     "introVideo": {
@@ -181,11 +192,11 @@
     ],
 
     "tags": [
-      "Future",
-      "Science",
-      "Coding",
-      "Education",
-      "Technology"
+      "Kurumsal",
+      "Koçluk",
+      "Eğitim",
+      "Nefes",
+      "Danışmanlık"
     ]
   }
 }
