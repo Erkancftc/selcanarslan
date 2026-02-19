@@ -276,7 +276,7 @@ fetch("data/course-single.json")
       <li>
         <div class="alignleft">
           <a href="instructor-single.html">
-            <img src="http://placehold.it/50x50" alt="${author}">
+            <img src="" alt="${author}">
           </a>
         </div>
         <div class="description-wrap">
@@ -377,7 +377,7 @@ fetch("data/course-single.json")
           const stars = starsHTML(r.rating)
 
           // Not: HTML template'inde review avatar placeholder idi.
-          const avatar = "http://placehold.it/50x50"
+          const avatar = ""
 
           return `
       <li>
