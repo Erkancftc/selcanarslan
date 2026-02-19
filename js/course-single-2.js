@@ -1,6 +1,60 @@
-fetch("data/course-single.json")
+// ==============================
+// 1) URL'den slug al
+// ==============================
+function getSlugFromUrl() {
+  const url = new URL(window.location.href);
+
+  // a) ?slug=... varsa onu al
+  const qp = url.searchParams.get("slug");
+  if (qp) return qp;
+
+  // b) yoksa /courses/kocluk-icf-seviye-1 gibi path'ten al (opsiyonel)
+  // son segmenti slug kabul eder
+  const parts = url.pathname.split("/").filter(Boolean);
+  const last = parts[parts.length - 1] || "";
+  // eğer "courses.html" gibi dosya adıysa slug değil, null döndür
+  if (last.endsWith(".html")) return null;
+
+  return last || null;
+}
+
+// ==============================
+// 2) Index JSON'dan slug'a göre course bul
+//    index örneği: { "courses": [ {page:{slug:"..."}, content:{...}}, ... ] }
+// ==============================
+async function fetchCourseBySlug({ indexUrl, slug }) {
+  const res = await fetch(indexUrl, { cache: "no-store" });
+  if (!res.ok) throw new Error(`Index JSON bulunamadı: ${res.status} (${indexUrl})`);
+
+  const indexData = await res.json();
+
+  // courses listesi nerede?
+  // a) {courses:[...]} (önerilen)
+  // b) direkt array [...]
+  const list = Array.isArray(indexData) ? indexData : (indexData.courses || []);
+
+  const course = list.find(item => item?.page?.slug === slug);
+  if (!course) throw new Error(`Slug bulunamadı: ${slug}`);
+
+  return course;
+}
+
+// ==============================
+// 3) Başlat: slug'a göre data'yı al ve render et
+// ==============================
+async function initCoursePage() {
+  // URL'den slug al
+  const slug = getSlugFromUrl() || "kocluk-icf-seviye-1"; // default/fallback
+
+  // Tek JSON içinde tüm kurslar (senin "tek json" hedefin buysa)
+  
+  };
+
+
+fetch("data/courses.json")
   .then(response => response.json())
   .then(data => {
+    
     //heading banner içeriği
     document.getElementById("headingBg").style.backgroundImage = data.heading.backgroundImage
     document.getElementById("headingTitle").textContent = data.heading.title
@@ -142,12 +196,12 @@ fetch("data/course-single.json")
     }
 
     // Çalıştır
-    buildAccordionFromCourse("./data/course-single.json")
+    buildAccordionFromCourse("./data/courses.json")
 
     // =====================================================
     // COURSE SINGLE (accordion'dan sonrası)
-    // JSON: course-single.json  -> data.content.instructor, data.content.reviews, data.sidebar, data.content.blocks(accordion)
-    // HTML: course-single.html  -> #accordion2, .instructorInfoBox, .reviewsList, #sidebar
+    // JSON: courses.json  -> data.content.instructor, data.content.reviews, data.sidebar, data.content.blocks(accordion)
+    // HTML: courses.html  -> #accordion2, .instructorInfoBox, .reviewsList, #sidebar
     // =====================================================
 
     function escapeHTML(str) {
@@ -296,8 +350,8 @@ fetch("data/course-single.json")
 
     // =========================
     // ACCORDION'DAN SONRASI
-    // course-single-temp.html ID'lerine göre
-    // JSON: course-single.json
+    // courses-temp.html ID'lerine göre
+    // JSON: courses.json
     // =========================
 
     function esc(s) {
@@ -321,7 +375,7 @@ fetch("data/course-single.json")
 
     /**
      * Accordion'dan sonraki tüm alanları doldurur.
-     * @param {any} data - course-single.json içeriği
+     * @param {any} data - courses.json içeriği
      */
     function renderAfterAccordion(data) {
       fillBookmarkCTA(data)
@@ -437,6 +491,8 @@ fetch("data/course-single.json")
       }
     }
     renderAfterAccordion(data);
+      if (typeof renderPage === "function") renderPage(data)
+      if (typeof renderAfterAccordion === "function") renderAfterAccordion(data)
 
     
   })
