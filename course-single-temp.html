@@ -270,15 +270,48 @@
                 <ul id="courseReviewsMount" class="list-unstyled reviewsList"></ul>
 
                 <!-- REVIEW FORM -->
-                <form id="courseReviewForm" action="#" class="reviesSubmissionForm">
-                  <textarea id="reviewText" class="form-control element-block"></textarea>
-
-                  <input type="text" id="reviewName" class="form-control element-block" />
-
-                  <input type="email" id="reviewEmail" class="form-control element-block" />
-
-                  <button id="reviewSubmit" type="submit" class="btn btn-theme btn-warning text-uppercase font-lato fw-bold">Submit</button>
-                </form>
+                <form action="#" class="reviesSubmissionForm">
+							<h2 class="text-noCase">Yorum yap</h2>
+							<p>Mail adresiniz paylaşılmayacaktır. Lütfen gerekli alanları doldurunuz <span class="required">*</span></p>
+							<div class="form-group">
+								<span class="formLabel fw-normal font-lato no-shrink">Oyunuz</span>
+								<ul class="star-rating list-unstyled">
+									<li>
+										<input type="checkbox" id="rate1" class="customFormReset">
+										<label for="rate1" class="fas fa-star"><span class="sr-only">star</span></label>
+									</li>
+									<li>
+										<input type="checkbox" id="rate2" class="customFormReset">
+										<label for="rate2" class="fas fa-star"><span class="sr-only">star</span></label>
+									</li>
+									<li>
+										<input type="checkbox" id="rate3" class="customFormReset">
+										<label for="rate3" class="fas fa-star"><span class="sr-only">star</span></label>
+									</li>
+									<li>
+										<input type="checkbox" id="rate4" class="customFormReset">
+										<label for="rate4" class="fas fa-star"><span class="sr-only">star</span></label>
+									</li>
+									<li>
+										<input type="checkbox" id="rate5" class="customFormReset">
+										<label for="rate5" class="fas fa-star"><span class="sr-only">star</span></label>
+									</li>
+								</ul>
+							</div>
+							<div class="form-group">
+								<label for="rview" class="formLabel fw-normal font-lato no-shrink">Yorumunuz <span class="required">*</span></label>
+								<textarea id="rview" class="form-control element-block"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="name" class="formLabel fw-normal font-lato no-shrink">İsim <span class="required">*</span></label>
+								<input type="text" id="name" class="form-control element-block">
+							</div>
+							<div class="form-group">
+								<label for="E-posta" class="formLabel fw-normal font-lato no-shrink">E-posta <span class="required">*</span></label>
+								<input type="email" id="E-posta" class="form-control element-block">
+							</div>
+							<button type="submit" class="btn btn-theme btn-warning text-uppercase font-lato fw-bold">Gönder</button>
+						</form>
               </article>
 
               <!-- SIDEBAR -->
