@@ -1,167 +1,145 @@
 // ==============================
-// 1) URL'den slug al
+// helpers
 // ==============================
+
 function getSlugFromUrl() {
   const url = new URL(window.location.href);
-
-  // a) ?slug=... varsa onu al
   const qp = url.searchParams.get("slug");
   if (qp) return qp;
 
-  // b) yoksa /courses/kocluk-icf-seviye-1 gibi path'ten al (opsiyonel)
-  // son segmenti slug kabul eder
   const parts = url.pathname.split("/").filter(Boolean);
   const last = parts[parts.length - 1] || "";
-  // eğer "courses.html" gibi dosya adıysa slug değil, null döndür
   if (last.endsWith(".html")) return null;
-
   return last || null;
 }
 
-// ==============================
-// 2) Index JSON'dan slug'a göre course bul
-//    index örneği: { "courses": [ {page:{slug:"..."}, content:{...}}, ... ] }
-// ==============================
+/**
+ * load the index JSON and return the course whose page.slug matches
+ */
 async function fetchCourseBySlug({ indexUrl, slug }) {
   const res = await fetch(indexUrl, { cache: "no-store" });
   if (!res.ok) throw new Error(`Index JSON bulunamadı: ${res.status} (${indexUrl})`);
-
   const indexData = await res.json();
-
-  // courses listesi nerede?
-  // a) {courses:[...]} (önerilen)
-  // b) direkt array [...]
-  const list = Array.isArray(indexData) ? indexData : (indexData.courses || []);
-
+  const list = Array.isArray(indexData)
+    ? indexData
+    : indexData.courses || [];
   const course = list.find(item => item?.page?.slug === slug);
   if (!course) throw new Error(`Slug bulunamadı: ${slug}`);
-
   return course;
 }
 
-// ==============================
-// 3) Başlat: slug'a göre data'yı al ve render et
-// ==============================
-async function initCoursePage() {
-  // URL'den slug al
-  const slug = getSlugFromUrl() || "kocluk-icf-seviye-1"; // default/fallback
+/**
+ * all of the DOM‑manipulation code that used to run on "data"
+ */
+async function renderCourse(data) {
+  try {
+  // heading banner
+  document.getElementById("headingBg").style.backgroundImage = data.heading.backgroundImage;
+  document.getElementById("headingTitle").textContent = data.heading.title;
 
-  // Tek JSON içinde tüm kurslar (senin "tek json" hedefin buysa)
-  
-  };
+  // breadcrumb
+  const { listItems } = data.breadcrumb;
+  const breadCrumb = document.getElementById("js-breadcrumb");
+  breadCrumb.innerHTML = "";
+  listItems.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    breadCrumb.appendChild(li);
+    listItems.lastIndexOf(item) === listItems.length - 1 ? li.classList.add("active") : null;
+  });
 
+  // head content
+  const dataContent = data.content;
+  document.getElementById("courseTitle").textContent = dataContent.mainTitle;
 
-fetch("data/courses.json")
-  .then(response => response.json())
-  .then(data => {
-    
-    //heading banner içeriği
-    document.getElementById("headingBg").style.backgroundImage = data.heading.backgroundImage
-    document.getElementById("headingTitle").textContent = data.heading.title
-    const content = document.getElementById("content")
-    //breadcrumb  içeriği
-    const { listItems } = data.breadcrumb
-    const breadCrumb = document.getElementById("js-breadcrumb")
-    breadCrumb.innerHTML = ""
-    listItems.forEach(item => {
-      const li = document.createElement("li")
-      li.textContent = item
-      breadCrumb.appendChild(li)
-      listItems.lastIndexOf(item) === listItems.length - 1 ? li.classList.add("active") : null
-    })
+  // instructor image and name
+  const { src, alt } = dataContent.viewHeader.author.image;
 
-    //head içeriği
-    const dataContent = data.content
-    document.getElementById("courseTitle").textContent = dataContent.mainTitle
+  const img = document.getElementById("vhAuthorImg");
+  img.src = src;
+  img.alt = alt;
 
-    //eğitmen image ve isim
-    const { src, alt } = dataContent.viewHeader.author.image
+  const vhAuthorLabel = document.getElementById("vhAuthorLabel");
+  const vhAuthorName = document.getElementById("vhAuthorName");
+  vhAuthorLabel.textContent = dataContent.viewHeader.author.label;
+  vhAuthorName.textContent = dataContent.viewHeader.author.name;
 
-    const img = document.getElementById("vhAuthorImg")
-    img.src = src
-    img.alt = alt
+  const vhCategoryValue = document.getElementById("vhCategoryValue");
+  vhCategoryValue.textContent = dataContent.viewHeader.category.value;
 
-    const vhAuthorLabel = document.getElementById("vhAuthorLabel")
-    const vhAuthorName = document.getElementById("vhAuthorName")
-    vhAuthorLabel.textContent = dataContent.viewHeader.author.label
-    vhAuthorName.textContent = dataContent.viewHeader.author.name
+  const { vhStars, totalReviews } = dataContent.viewHeader.rating;
 
-    const vhCategoryValue = document.getElementById("vhCategoryValue")
-    vhCategoryValue.textContent = dataContent.viewHeader.category.value
+  // kaç yıldız olacağı hesaplanacak
 
-    const { vhStars, totalReviews } = dataContent.viewHeader.rating
+  document.getElementById("vhReviewCount").textContent = `(${totalReviews} Yorum)`;
 
-    // kaç yıldız olacağı hesaplanacak
+  const courseHeroImg = document.getElementById("courseHeroImg");
+  courseHeroImg.src = dataContent.heroImage.src;
+  courseHeroImg.alt = dataContent.heroImage.alt;
 
-    document.getElementById("vhReviewCount").textContent = `(${totalReviews} Yorum)`
+  // paragraf başlangıç
 
-    const courseHeroImg = document.getElementById("courseHeroImg")
-    courseHeroImg.src = dataContent.heroImage.src
-    courseHeroImg.alt = dataContent.heroImage.alt
+  const courseBlocksMount = document.getElementById("courseBlocksMount");
 
-    //paragraf başlangıç
+  dataContent.blocks.forEach(block => {
+    const { type, level, text, intro, items } = block;
 
-    const courseBlocksMount = document.getElementById("courseBlocksMount")
+    if (type === "heading" && level === 3) {
+      const h3 = document.createElement("h3");
+      h3.textContent = text;
+      h3.classList.add("content-h3");
+      courseBlocksMount.appendChild(h3);
+    } else if (type === "heading" && level === 2) {
+      const h2 = document.createElement("h2");
+      h2.textContent = text;
+      h2.classList.add("content-h2");
+      courseBlocksMount.appendChild(h2);
+    }
 
-    dataContent.blocks.forEach(block => {
-      const { type, level, text, intro, items } = block
-
-      if (type === "heading" && level === 3) {
-        const h3 = document.createElement("h3")
-        h3.textContent = text
-        h3.classList.add("content-h3")
-        courseBlocksMount.appendChild(h3)
-      } else if (type === "heading" && level === 2) {
-        const h2 = document.createElement("h2")
-        h2.textContent = text
-        h2.classList.add("content-h2")
-        courseBlocksMount.appendChild(h2)
+    if (type === "paragraph") {
+      const p = document.createElement("p");
+      p.textContent = text;
+      courseBlocksMount.appendChild(p);
+    }
+    if (type === "list") {
+      // optional introductory text before the list
+      if (intro) {
+        const introP = document.createElement("p");
+        introP.textContent = intro;
+        courseBlocksMount.appendChild(introP);
       }
 
-      if (type === "paragraph") {
-        const p = document.createElement("p")
-        p.textContent = text
-        courseBlocksMount.appendChild(p)
-      }
-      if (type === "list") {
-        // optional introductory text before the list
-        if (intro) {
-          const introP = document.createElement("p")
-          introP.textContent = intro
-          courseBlocksMount.appendChild(introP)
-        }
+      const ul = document.createElement("ul");
+      ul.classList.add("listDefault", "list-unstyled");
+      // create an <li> for each item and append to the <ul>
+      items.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ul.appendChild(li);
+      });
 
-        const ul = document.createElement("ul")
-        ul.classList.add("listDefault", "list-unstyled")
-        // create an <li> for each item and append to the <ul>
-        items.forEach(item => {
-          const li = document.createElement("li")
-          li.textContent = item
-          ul.appendChild(li)
-        })
+      courseBlocksMount.appendChild(ul);
+    }
+  });
+  async function buildAccordionFromCourse(jsonUrl) {
+    const res = await fetch(jsonUrl);
+    const data = await res.json();
 
-        courseBlocksMount.appendChild(ul)
-      }
-    })
-    async function buildAccordionFromCourse(jsonUrl) {
-      const res = await fetch(jsonUrl)
-      const data = await res.json()
+    // 1️⃣ Accordion bloğunu bul
+    const accordionBlock = dataContent.blocks.find(block => block.type === "accordion");
 
-      // 1️⃣ Accordion bloğunu bul
-      const accordionBlock = dataContent.blocks.find(block => block.type === "accordion")
+    if (!accordionBlock) return
 
-      if (!accordionBlock) return
+    const items = accordionBlock.items
+    const mount = document.getElementById("accordion")
 
-      const items = accordionBlock.items
-      const mount = document.getElementById("accordion")
+    mount.innerHTML = items
+      .map((item, index) => {
+        const collapseId = `collapse${index}`
+        const headingId = `heading${index}`
+        const isFirst = index === 0 // ister ilk açık olsun
 
-      mount.innerHTML = items
-        .map((item, index) => {
-          const collapseId = `collapse${index}`
-          const headingId = `heading${index}`
-          const isFirst = index === 0 // ister ilk açık olsun
-
-          return `
+        return `
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="${headingId}">
           <h3 class="panel-title fw-normal">
@@ -173,9 +151,7 @@ fetch("data/courses.json")
                aria-expanded="${isFirst}"
                aria-controls="${collapseId}">
               <span class="accOpenerCol">
-                <i class="fas fa-chevron-circle-right accOpenerIcn"></i>
-                <i class="fas fa-play-circle inlineIcn"></i>
-                ${item.title}
+                <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="fas fa-play-circle inlineIcn"></i>${escapeHTML(item.title)}
               </span>
             </a>
           </h3>
@@ -493,9 +469,26 @@ fetch("data/courses.json")
     renderAfterAccordion(data);
       if (typeof renderPage === "function") renderPage(data)
       if (typeof renderAfterAccordion === "function") renderAfterAccordion(data)
-
-    
-  })
-  .catch(error => {
+  } catch (error) {
     console.error("Hata:", error)
-  })
+  }
+}
+
+// -----------------------------
+// STARTUP
+// -----------------------------
+
+// fetch appropriate course and render on page load
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const slug = getSlugFromUrl() || "kocluk-icf-seviye-1";
+    const course = await fetchCourseBySlug({
+      indexUrl: "data/courses.json",
+      slug,
+    });
+    await renderCourse(course);
+  } catch (err) {
+    console.error("initCoursePage error", err);
+    // optionally show a user-friendly message or redirect
+  }
+});
