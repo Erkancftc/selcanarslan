@@ -196,7 +196,7 @@
   {
     "heading": {
       "title": "Koçluk ICF Seviye 2",
-      "backgroundImage": "url('images/banner/courses-banner.jpg')"
+      "backgroundImage": "url('images/banner/banner-1.jpg')"
     },
     "breadcrumb": {
       "listItems": ["Anasayfa", "Kurs", "Koçluk ICF Seviye 2"]
@@ -245,50 +245,58 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "Koçluk ICF Seviye 1"
+          "text": "Koçluk ICF Seviye 2"
         },
         {
           "type": "paragraph",
-          "text": "ICF Seviye 1 Koçluk Eğitimi Akreditasyonuna Giriş Seviye 1 koçluk eğitimi, koç adaylarına temel becerileri kazandırır ve onları ICF Associate Certified Coach (ACC) unvanına giden net bir yol haritasıyla buluşturur. Seviye 1 akreditasyonu, dünya genelinde üst düzey koçluk eğitimi sunan ve ICF tarafından tanınan seçkin eğitim sağlayıcıları arasına katılmanızı sağlar; böylece kurumunuzun güvenilirliği ve erişim gücü artar."
+          "text": "Seviye 2 akreditasyon, temel eğitimin ötesine geçen bir koçluk eğitim modelidir. Kapsamlı ve derinlemesine eğitim ile mentorluk desteği sunar; katılımcılara üst düzey koçluk yapabilme ve danışanlarla daha derin ilişkiler kurabilme yetkinliği kazandırır. Bu sayede daha başarılı koçluk sonuçları elde edilmesi hedeflenir."
         },
         {
           "type": "list",
-          "intro": "Seviye 1 akreditasyonuna başvurabilmek için, koçluk eğitimi programınızın her bir katılımcı için aşağıdaki şartları sağlaması gerekir:",
-          "items": [
-            "60 ila 124 saat arasında koçluğa özgü (coach-specific) eğitim teması saati,",
-            "Beş koçluk oturumunun gözlemlenmesi ve her biri için yazılı geri bildirim verilmesi,",
-            "En az üç aylık bir süreye yayılmış toplam 10 saat mentör koçluk,",
-            "ACC minimum yetkinlik seviyesinde bir final performans değerlendirmesi."
-          ]
+          "intro": "Seviye 2 akreditasyonuna sahip bir programdan mezun olanlar yalnızca temel becerileri kazanmakla kalmaz, aynı zamanda doğrudan:",
+          "items": ["Associate Certified Coach (ACC)", "Professional Certified Coach (PCC),"]
+        },
+        {
+          "type": "paragraph",
+          "text": "unvanlarına başvurma hakkı elde eder. Bu durum, kariyer gelişimi açısından önemli bir avantaj sağlar ve Seviye 2 eğitimlerini koçlar için son derece cazip hale getirir."
+        },
+        {
+          "type": "paragraph",
+          "text": "Seviye 2 akreditasyonuna uygun olabilmek için koçluk eğitim programınızın katılımcılara aşağıdakileri sağlaması gerekir:"
+        },
+        {
+          "type": "list",
+          "items": ["125–175 saat koçluk odaklı eğitim", "6 koçluk oturumundan gözlem ve yazılı geri bildirim", "En az 3 ay süren 10 saat mentorluk koçluğu", "PCC minimum seviye kriterlerinde final performans değerlendirmesi"]
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "ICF Seviye 1 Akreditasyonunun Faydaları"
+          "text": "ICF Seviye 2 Akreditasyonu İçin Gerekli Standartlar"
         },
         {
           "type": "paragraph",
-          "text": "ICF Seviye 1 akreditasyonunu kazanmak, potansiyel öğrencilerinize ve iş ortaklarınıza güçlü bir mesaj verir: Programınız, temel koçluk eğitimi için belirlenen titiz ve uluslararası düzeyde tanınan standartları karşılamaktadır. Ancak faydaları bununla sınırlı değildir."
+          "text": "ICF’e akreditasyon almak için kurumunuzun 7 standart alanını karşılaması gerekir. Bu standartlar; kalite, etik, şeffaflık ve eğitim bütünlüğünü güvence altına alır. Aynı zamanda mezunlarınızın koçluk kariyerlerinde anlamlı etki yaratmasını destekler."
         },
         {
           "type": "list",
-          "items": [
-            "ACC profesyonel kimliğin “resmi başlangıcıdır",
-            "ICF akreditasyonu 140’tan fazla ülkede tanınmaktadır. Bu da erişim alanınızı genişletmenizi ve dünyanın dört bir yanından öğrencilerin katılımını mümkün kılar.",
-            "Bu aşamada önemli olan mükemmel koç olmak değil, tutarlı koç olmak."
-          ]
+          "items": ["Eğitim Programının Misyon ve Vizyonu", "Yönetim, Organizasyon ve İşletme Operasyonları", "Etik, Dürüstlük ve Şeffaflık", "Eğitim ve Öğretim", "Öğrenme ve Uygulama", "Öğrenme Deneyimi ve Destek", "Değerlendirme ve Etkililik"]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Seviye 2 Akreditasyon Süreci"
         },
         {
           "type": "paragraph",
-          "text": "ICF Seviye 1 programlarından mezun olanlar, ACC unvanına Seviye 1 Yolu (Level 1 Pathway) üzerinden başvurabilir. Bu yol, diğer belgelendirme süreçlerine kıyasla daha basit ve daha akıcıdır. Bu avantaj, potansiyel öğrenciler için oldukça caziptir ve programınız için güçlü bir satış argümanı oluşturabilir."
+          "text": "ICF Seviye 2 akreditasyonuna başvurmak karmaşık bir süreç gibi görünebilir; ancak her adımda destek sunulmaktadır. Gerekli belgelerin toplanmasından inceleme sürecine kadar tüm aşamalar açık şekilde tanımlanmıştır. "
         },
         {
           "type": "paragraph",
-          "text": "ICF Seviye 1 akreditasyonunu almak; müfredat içeriği, eğitim kalitesi ve etik standartlarla ilgili katı kriterleri karşılamanızı gerektirir. Bu da yüksek kaliteli eğitim uygulamalarını sürdürmenizi sağlar ve öğrenciler için daha iyi öğrenme çıktıları ortaya çıkarır."
+          "text": "Süreç kapsamlıdır; çünkü amacımız programınızın ICF standartlarını eksiksiz karşıladığından emin olmaktır. Bu da kurumunuzu koçluk sektöründe lider konuma taşır."
         },
         {
-          "type": "paragraph",
-          "text": "Akreditasyon süreci düzenli gözden geçirme ve değerlendirmeler içerir. Bu da koçluk programlarınızı sektör standartları, ICF’in Temel Yetkinlikleri ve mentor ile öğrenci geri bildirimleri doğrultusunda sürekli güncellemenizi ve geliştirmenizi teşvik eder. Ayrıca sizi desteklemeye istekli bir meslektaş ağına erişim imkânı da sunar."
+          "type": "list",
+          "items": ["Başvurunun Sunulması", "Başvurunun İncelenmesi"]
         },
         {
           "type": "heading",
@@ -297,31 +305,222 @@
         },
         {
           "type": "accordion",
-          "title": "Seviye 1 Akreditasyon için Başvuru Maliyeti",
+          "title": "Seviye 2 Akreditasyon için Başvuru Maliyeti",
           "items": [
             {
-              "title": "Akreditasyon Maliyeti",
-              "content": "60-75 İletişim Saati Olan Programlar = 2.000$ USD 76+ İletişim Saati Olan Programlar = 2.500$ USD Lütfen dikkat: Başvuru ücretleri iade edilmez ve akreditasyon onayını garanti etmez"
+              "title": "ICF Seviye 2 Akreditasyonunun Faydaları",
+              "content": "Seviye 2 akreditasyonu, kurumunuzun koçluk eğitimindeki itibarını güçlendirir. Motivasyonu yüksek öğrencileri çeker, sunduğunuz eğitimleri genişletir ve mezunlarınızın uzun vadeli başarısını destekler."
             },
             {
-              "title": "Seviye 1 Akreditasyon Başlangıç Tarihi",
-              "content": "Seviye 1 akreditasyonunuz üç takvim yılı için geçerlidir ve başvurunun yapıldığı tarihte başlar.Akreditasyon onayından önce programınızdan bireyleri zaten mezun ettiyseniz, akreditasyonunuz en yeni mezunlara geriye dönük olarak uygulanabilir, yani bu mezunlar Seviye 1 koçluk eğitimini tamamlamışlardır."
+              "title": "Programınızın Prestijini Artırır",
+              "content": "Seviye 2 akreditasyonu, kurumunuzu koçluk eğitimi alanında lider konuma taşır. Programınızın ICF’in küresel standartlarını karşıladığını gösterir ve yüksek kaliteli eğitim sunduğunuzun resmi bir kanıtı olur. Bu da daha fazla öğrenci ve sektör paydaşı çekmenizi sağlar."
             },
             {
-              "title": "Gerekli Standartlar",
-              "content": "ICF tarafından akredite edilen programların sadece — öne çıkmamasını sağlayarak küresel standartları yükseltmeye kararlıyız. Bu akreditasyon standartları, öğrencilere yatırımlarının başarılı bir kariyere doğru güçlü bir adım olduğuna dair güvence vererek, en yüksek kalitede koçluk programlarını garanti eder. ICF tarafından akredite olmak için, mükemmelliği sağlayan yedi temel standardı karşılamanız gerekir: Standart 1: Eğitim ve Öğrenme Programının Misyon ve Vizyonu. Standart 2: Yönetim, Organizasyon ve Ticari Operasyonlar. Standart 3: Etik, Dürüstlük ve Şeffaflık. Standart 4: Eğitim ve Öğretim. Standart 5: Öğretim ve Öğretim. Standart 6: Öğrenme Deneyimi ve Desteği. Standart 7: Değerlendirme, Değerlendirme ve Etkililik."
+              "title": "Eğitim Yelpazenizi Genişletir",
+              "content": "ACC ve PCC unvanlarına hazırlık sağlayan kapsamlı bir eğitim sunarak programınızın cazibesini artırırsınız. Kariyerini ilerletmek isteyen koçlar için kurumunuz, prestijli sertifikalara giden güvenilir bir yol haline gelir."
             },
             {
-              "title": "Seviye 1 Akreditasyon Süreci",
-              "content": "Akreditasyona başvurmak, programınızın gücünü kapsamlı bir inceleme yoluyla sergilemek, müfredatınızın, öğretim üyelerinizin, öğrenci desteğinizin, öğrenme çıktılarınızın ve sürekli iyileştirme taahhüdünüzün en yüksek standartları karşıladığını onaylamak için bir fırsattır. Programınızın mükemmelliğini doğrulamak ve koçluk endüstrisindeki kalıcı etkisini güvence altına almak için güçlü bir adımdır."
+              "title": "Öğrenci Talebini ve Kayıtları Artırır",
+              "content": "Seviye 2 akreditasyonu, daha yüksek bir eğitim standardını temsil eder. Ciddi ve motive öğrencileri çeker, programınıza rekabet avantajı kazandırır ve kayıt sayısında sürdürülebilir artış sağlar."
             },
             {
-              "title": "Başvurunuzu Gönderme",
-              "content": "İncelemek the Akreditasyon Standartları aşağıdakiler de dahil olmak üzere, başvurunuzu göndermeden önce tüm gereksinimleri karşıladığınızdan ve tüm belgeleri sağladığınızdan emin olmak için: Programın tamamını oluşturan tüm sınıfların ders listesi. Gözlemlenen bir koçluk oturumunun yazılı geri bildirimle kaydedilmesi. ACC düzeyinde yazılı geri bildirim ve kelime kelime transkript ile geçen bir öğrencinin performans değerlendirmesinin kaydedilmesi."
+              "title": "Mezun Başarısını Destekler",
+              "content": "Seviye 2 program mezunları, ileri düzey sertifikasyon ve liderlik rollerine hazırdır. Mezunların başarısı, kurumunuzun itibarını güçlendirir ve olumlu referans etkisi yaratır."
+            }
+          ]
+        }
+      ],
+
+      "instructor": {
+        "name": "Selcan Arslan",
+        "title": "Sosyolog - Eğitim Uzmanı",
+        "image": {
+          "src": "images/Selcan-Arslan.jpg",
+          "alt": "Selcan Arslan"
+        },
+        "bio": "Uzmanlık alanı koçluk eğitimi ve sosyal bilimler."
+      },
+
+      "reviews": {
+        "total": 2,
+        "items": [
+          {
+            "author": "Sevim Akyüz",
+            "date": "2025-03-07",
+            "rating": 5,
+            "text": "Eğitim oldukça tatmin ediciydi."
+          },
+          {
+            "author": "Saim Demir",
+            "date": "2025-03-05",
+            "rating": 5,
+            "text": "İçerik çok açıklayıcıydı."
+          }
+        ]
+      }
+    },
+
+    "sidebar": {
+      "courseInfo": {
+        "price": "$570.00",
+        "students": 50,
+        "duration": "30 gün",
+        "lectures": 10,
+        "videoHours": 12,
+        "certificate": true
+      },
+
+      "categories": ["Eğitim", "Koçluk", "Nefes Koçluğu", "Liderlik", "Kurumsal Yöneticilik"],
+
+      "introVideo": {
+        "url": "http://www.youtube.com/embed/9bZkp7q19f0?autoplay=1",
+        "thumbnail": "http://placehold.it/260x220"
+      },
+
+      "popularCourses": [
+        {
+          "title": "Introduction to Mobile Apps Development",
+          "price": "$99.00"
+        },
+        {
+          "title": "Become a Professional Film Maker",
+          "price": "Free"
+        }
+      ],
+
+      "tags": ["Kurumsal", "Koçluk", "Eğitim", "Nefes", "Danışmanlık"]
+    }
+  },
+  {
+    "heading": {
+      "title": "Koçluk ICF Seviye 3",
+      "backgroundImage": "url('images/banner/banner-1.jpg')"
+    },
+    "breadcrumb": {
+      "listItems": ["Anasayfa", "Kurs", "Koçluk ICF Seviye 3"]
+    },
+
+    "page": {
+      "id": "kocluk-icf-seviye-3",
+      "slug": "kocluk-icf-seviye-3",
+      "template": "course-single"
+    },
+
+    "seo": {
+      "title": "Koçluk ICF Seviye 3",
+      "description": "ICF Seviye 3 Koçluk Eğitimi Akreditasyonuna Giriş ve başvuru şartları, faydaları ve süreç bilgileri."
+    },
+
+    "content": {
+      "mainTitle": "Koçluk ICF Seviye 3",
+
+      "viewHeader": {
+        "author": {
+          "label": "Eğitmen",
+          "name": "Selcan Arslan",
+          "link": "about.html",
+          "image": {
+            "src": "images/Selcan-Arslan.jpg",
+            "alt": "Eğitmen Selcan Arslan"
+          }
+        },
+        "category": {
+          "label": "Kategori",
+          "value": "Programın Dili"
+        },
+        "rating": {
+          "value": 5,
+          "totalReviews": 5
+        }
+      },
+
+      "heroImage": {
+        "src": "images/kurslar/seviye3.jpg",
+        "alt": "Koçluk ICF Seviye 3"
+      },
+
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Koçluk ICF Seviye 3"
+        },
+        {
+          "type": "paragraph",
+          "text": "Seviye 3 akreditasyonu, eğitiminizin PCC unvanına sahip (aktif) koçları, karmaşık koçluk senaryolarında ustalıkla ilerleyebilecek ve danışanlarda derin dönüşüm sağlayabilecek düzeyde hazırladığını gösterir. Seviye 2 gibi önceki eğitimlerin üzerine inşa edilir ve mezunların prestijli Master Certified Coach (MCC) unvanını hedeflemeye tam donanımlı olmasını sağlar."
+        },
+        {
+          "type": "paragraph",
+          "text": "Programınızın, ICF Temel Yetkinlikleri (Core Competencies) konusunda derin uzmanlık sunması ve güçlü bir mesleki gelişim anlayışı benimsemesi gerekir. Böylece mezunlar yalnızca teknik becerilerini değil, aynı zamanda yaşam boyu öğrenme ve mükemmeliyet anlayışını da içselleştirir."
+        },
+        {
+          "type": "list",
+          "intro": "Seviye 3 için koçluk eğitim programınızın her öğrenciye aşağıdakileri sağlaması gerekir:",
+          "items": ["En az 75 saat öğrenci temas süresi (contact hours)", "5 koçluk oturumuna yönelik gözlem ve yazılı geri bildirim", "En az 3 aylık süreçte minimum 10 saat mentorluk koçluğu"]
+        },
+        {
+          "type": "paragraph",
+          "text": "Ayrıca kuruluşunuzda müfredatı, öğretim süreçlerini, eğitmen eğitimini ve tüm gözlem ile değerlendirme süreçlerini denetleyen bir eğitim direktörü bulunmalıdır."
+        },
+        {
+          "type": "heading",
+          "level": "3",
+          "text": "ICF Seviye 3 Akreditasyonu İçin Gerekli Standartlar"
+        },
+        {
+          "type": "list",
+          "intro": "Ustalık seviyesinde koçlar yetiştirmeyi hedefliyorsanız, yüksek mesleki standartların zaten savunucususunuz demektir. Seviye 3 akreditasyonu için kurumunuzun aşağıdaki 7 temel standart alanını karşılaması gerekir:",
+          "items": ["Eğitim Programının Misyon ve Vizyonu", "Yönetim, Organizasyon ve İşletme Operasyonları", "Etik, Dürüstlük ve Şeffaflık", "Eğitim ve Öğretim", "Öğrenme ve Uygulama", "Öğrenme Deneyimi ve Destek", "Değerlendirme ve Etkililik"]
+        },
+        {
+          "type": "paragraph",
+          "text": "Bu standartların sürdürülmesi, koçluk eğitiminde kaliteyi güvence altına alır, öğrencilerinizin başarısını destekler ve kurumunuzun genel itibarını güçlendirir."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Seviye 3 Akreditasyon Süreci"
+        },
+        {
+          "type": "paragraph",
+          "text": "Seviye 3 akreditasyonuna başvurunuz, programınız için yeni fırsatların kapısını açar. Süreç boyunca gelişim alanlarınızı görme ve programınızı daha da güçlendirme imkânı elde edersiniz."
+        },
+        {
+          "type": "paragraph",
+          "text": "Başvuru süreci, yalnızca bir onay mekanizması değil; aynı zamanda kurumunuzu yüksek kalite ve etik anlayışıyla hizalama fırsatıdır. Bu da mezunlarınızın değişen dünyada danışan ihtiyaçlarına daha güçlü yanıt verebilmesini sağlar."
+        },
+        {
+          "type": "list",
+          "items": ["Başvurunun Sunulması", "Başvurunun İncelenmesi"]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Önemli Bilgiler"
+        },
+        {
+          "type": "accordion",
+          "title": "Seviye 3 Akreditasyon için Başvuru Maliyeti",
+          "items": [
+            {
+              "title": "ICF Seviye 3 Akreditasyonunun Faydaları",
+              "content": "Seviye 3 akreditasyonu, uzun vadeli güçlü bir yapının temeli gibidir. Programınızın köklerini güçlendirir ve koçluk mesleğinin gelişimine katkı sağlayacak liderler yetiştirmenizi destekler. Bu sağlam yapı sayesinde kurumunuz çok sayıda avantaj elde eder."
             },
             {
-              "title": "Başvurunuzun İncelenmesi",
-              "content": "Seviye 2 uygulaması için tipik inceleme süresi = 8-12 hafta. Başvurunuzu yaptıktan sonraki ilk iki hafta içinde başvurunuz minimum gereklilikleri karşıladığından emin olmak için incelenecektir. Seviye 1 akreditasyonu için şunları doğrularız: Uygulama gerekli program saati sayısını karşılar. Kuruluşunuzun PCC veya MCC sertifikasına sahip bir eğitim direktörü vardır. Performans değerlendirme kaydı ve transkripti uygulamaya dahil olup standartlarımıza uygundur. Bu ilk incelemeden sonra başvurunuz daha derin bir inceleme sürecinden geçecektir. Onay üzerine, resmi onayınızı ve ilgili belgeleri almadan önce 30 dakikalık bir akreditasyon onay görüşmesine katılmanız gerekecektir. Bu görüşmeler, ICF akreditasyonu isteyen kuruluşlarla uyumu sağlamak ve beklentileri belirlemek için proaktif bir yaklaşımdır."
+              "title": "Güçlendirilmiş İtibar",
+              "content": "Seviye 3 akreditasyonu, kurumunuzu koçluk eğitimi alanında üst düzey bir lider olarak konumlandırır. Öğrenciler ve sektör tarafından en yüksek kalite, etik ve profesyonel standartlara bağlılığınızın göstergesi olarak kabul edilir."
+            },
+            {
+              "title": "Kurumsal Büyümenin Artması",
+              "content": "Artan güvenilirlik ve mükemmeliyet itibarı sayesinde öğrenci talebinde artış yaşanır. Bu da uzun vadeli büyüme ve sürdürülebilir gelişim sağlar."
+            },
+            {
+              "title": "Networking ve İş Birliği Fırsatları",
+              "content": "Diğer akredite eğitim sağlayıcıları ve sektör profesyonelleri ile güçlü bağlantılar kurma imkânı sunar. Bu da bilgi paylaşımı ve en iyi uygulamaların yaygınlaşmasını destekler."
+            },
+            {
+              "title": "Ciddi ve Kararlı Öğrencileri Çekme",
+              "content": "Akredite programlardan mezun olanlar, koçluk kariyerlerinde daha başarılı olma eğilimindedir. Bu durum güçlü bir mezun ağı oluşturur, kurumunuzun itibarını artırır ve gelecekteki öğrencilere güven verir."
             }
           ]
         }
