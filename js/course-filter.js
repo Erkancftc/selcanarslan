@@ -71,8 +71,13 @@ document.addEventListener("DOMContentLoaded", () => {
        return
      }
 
-     // Template sayfaya slug ile git
-     window.location.href = `course-single.html?slug=${encodeURIComponent(slug)}`
+     // sayfaya slug ile git
+     // not: index.html ve diğer linklerde kullanılan şablon sayfa
+     // course-single-temp.html olduğu için burayı ona göre ayarlıyoruz.
+     // Eğer ileride farklı bir hedef gerekirse bu satırı tek değişken
+     // ile yönetmek daha kolay olacaktır.
+     const targetPage = 'course-single-temp.html';
+     window.location.href = `${targetPage}?slug=${encodeURIComponent(slug)}`
    })
  })
 
