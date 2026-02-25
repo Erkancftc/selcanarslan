@@ -1,24 +1,63 @@
-const courseList = document.getElementById("courseList")
-const coursePrice = document.getElementById("coursePrice")
+document.addEventListener("DOMContentLoaded", () => {
+  const courseList = document.getElementById("courseList")
+  const coursePrice = document.getElementById("coursePrice")
 
-fetch("./data/courses.json")
-  .then(res => res.json())
-  .then(data => {
-    const courseListArray = data.courses
+  console.log("courseList:", courseList)
+  console.log("coursePrice:", coursePrice)
 
-    // önce temizle + placeholder
-    courseList.innerHTML = `<option value="">Kurs Seç</option>`
-    coursePrice.innerHTML = `<option value="">Fiyat</option>`
+  let courses = []
 
-    // optionları bas
-    courseListArray.forEach(c => {
-      const opt = document.createElement("option")
-      opt.value = c.page.id // ✅ eşleşme için şart
-      opt.textContent = c.heading.title
-      courseList.appendChild(opt)
+  fetch("./data/courses.json")
+    .then(res => res.json())
+    .then(data => {
+      courses = data.courses || []
+
+      // Kursları bas
+      courseList.innerHTML = `<option value="">Kurs Seç</option>`
+      courses.forEach(c => {
+        const opt = document.createElement("option")
+
+        // Burada value: id/slug ne varsa onu ver
+        const id = c.page?.id || c.page?.slug || c.slug || c.id
+        opt.value = id
+
+        opt.textContent = c.heading?.title || c.title || "Başlıksız Kurs"
+        courseList.appendChild(opt)
+      })
+
+      // Fiyat placeholder
+      coursePrice.innerHTML = `<option value="">Fiyat</option>`
+
+      $("#courseList").trigger("chosen:updated")
+      $("#coursePrice").trigger("chosen:updated")
     })
 
-    // ✅ en sonda update
-    $("#courseList").trigger("chosen:updated")
+  // Chosen ile change'i jQuery'den yakalamak daha sağlam
+  $("#courseList").on("change", function () {
+    const selectedId = this.value
+
+    console.log("selectedId:", selectedId)
+
+    if (!selectedId) {
+      coursePrice.innerHTML = `<option value="">Fiyat</option>`
+      $("#coursePrice").trigger("chosen:updated")
+      return
+    }
+
+    const found = courses.find(c => {
+      const id = c.page?.id || c.page?.slug || c.slug || c.id
+      return String(id) === String(selectedId)
+    })
+
+    console.log("found course:", found)
+
+    const priceValue = found?.price ?? found?.content?.price ?? found?.sidebar?.courseInfo.price 
+    console.log(priceValue, typeof priceValue);
+    console.log("priceValue:", priceValue)
+
+    const priceText = priceValue != null ? `${(priceValue).toLocaleString("tr-TR")} ` : "Fiyat bulunamadı"
+
+    coursePrice.innerHTML = `<option value="${priceValue ?? ""}" selected>${priceText}</option>`
     $("#coursePrice").trigger("chosen:updated")
   })
+})
