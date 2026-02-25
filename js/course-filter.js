@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const courseList = document.getElementById("courseList")
   const coursePrice = document.getElementById("coursePrice")
+   const btn = document.getElementById("btnSearchCourse")
 
   console.log("courseList:", courseList)
   console.log("coursePrice:", coursePrice)
@@ -60,4 +61,18 @@ document.addEventListener("DOMContentLoaded", () => {
     coursePrice.innerHTML = `<option value="${priceValue ?? ""}" selected>${priceText}</option>`
     $("#coursePrice").trigger("chosen:updated")
   })
-})
+
+   btn.addEventListener("click", () => {
+     const slug = courseList.value // option.value buraya slug/id basılmış olmalı
+
+     if (!slug) {
+       // seçili kurs yoksa hiçbir şey yapma ya da uyarı ver
+       alert("Lütfen bir kurs seçin.")
+       return
+     }
+
+     // Template sayfaya slug ile git
+     window.location.href = `course-single.html?slug=${encodeURIComponent(slug)}`
+   })
+ })
+
