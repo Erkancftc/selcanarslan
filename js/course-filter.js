@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const coursePrice = document.getElementById("coursePrice")
    const btn = document.getElementById("btnSearchCourse")
 
-  console.log("courseList:", courseList)
-  console.log("coursePrice:", coursePrice)
+  // console.log("courseList:", courseList)
+  // console.log("coursePrice:", coursePrice)
 
   let courses = []
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $("#courseList").on("change", function () {
     const selectedId = this.value
 
-    console.log("selectedId:", selectedId)
+    // console.log("selectedId:", selectedId)
 
     if (!selectedId) {
       coursePrice.innerHTML = `<option value="">Fiyat</option>`
@@ -50,11 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
       return String(id) === String(selectedId)
     })
 
-    console.log("found course:", found)
+    // console.log("found course:", found)
 
     const priceValue = found?.price ?? found?.content?.price ?? found?.sidebar?.courseInfo.price 
-    console.log(priceValue, typeof priceValue);
-    console.log("priceValue:", priceValue)
+    // console.log(priceValue, typeof priceValue);
+    // console.log("priceValue:", priceValue)
 
     const priceText = priceValue != null ? `${(priceValue).toLocaleString("tr-TR")} ` : "Fiyat bulunamadı"
 

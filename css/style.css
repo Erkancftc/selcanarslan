@@ -339,7 +339,7 @@ button,
   display: block;
   width: 12px;
   height: 12px;
-  background: url("chosen-sprite.png") -42px 1px no-repeat;
+  background: url("") -42px 1px no-repeat;
   font-size: 1px;
 }
 
@@ -383,7 +383,7 @@ button,
   display: block;
   width: 100%;
   height: 100%;
-  background: url("chosen-sprite.png") no-repeat 0px 2px;
+  background: url("") no-repeat 0px 2px;
 }
 
 .chosen-container-single .chosen-search {
@@ -401,7 +401,7 @@ button,
   height: auto;
   outline: 0;
   border: 1px solid #aaa;
-  background: url("chosen-sprite.png") no-repeat 100% -20px;
+  background: url("") no-repeat 100% -20px;
   font-size: 1em;
   font-family: sans-serif;
   line-height: normal;
@@ -562,7 +562,7 @@ button,
   display: block;
   width: 12px;
   height: 12px;
-  background: url("chosen-sprite.png") -42px 1px no-repeat;
+  background: url("") -42px 1px no-repeat;
   font-size: 1px;
 }
 
