@@ -222,7 +222,7 @@
                     "value": 5,
                     "color": undefined
                 }, {
-                    "category": "PARTNERLÜK",
+                    "category": "PARTNERLİK",
                     "value": 5,
                     "color": undefined
                 }]
@@ -328,7 +328,7 @@
 
             series.columns.template.tooltipText = "{categoryX}: {valueY.value}";
             series.tooltip.getFillFromObject = false;
-            series.tooltip.background.fill = am4core.color("#f7aa00");
+            series.tooltip.background.fill = am4core.color("#ffc000");
             series.tooltip.label.fill = am4core.color("#414042");
             series.tooltip.label.fontWeight = 'bold';
             
@@ -369,7 +369,7 @@
                 });
 
                 let axisFill = axisRange.axisFill;
-                axisFill.fill = am4core.color("#f7aa00");
+                axisFill.fill = am4core.color("#ffc000");
                 axisFill.disabled = false;
                 axisFill.fillOpacity = 1;
                 axisFill.adapter.add("innerRadius", (innerRadius, target) => {
@@ -742,7 +742,7 @@
                 
                 // Tooltip'i güzelleştir
                 series.columns.template.tooltipText = "{categoryX}: {valueY.value}/10";
-                series.tooltip.background.fill = am4core.color("#f7aa00");
+                series.tooltip.background.fill = am4core.color("#ffc000");
                 series.tooltip.label.fill = am4core.color("#ffffff");
                 series.tooltip.label.fontWeight = 'bold';
                 
@@ -750,7 +750,7 @@
                 if (chart && chart.data) {
                     resultsChart.data = chart.data.map(item => ({
                         ...item,
-                        color: am4core.color("#f7aa00")
+                        color: am4core.color("#ffc000")
                     }));
                 }
                 
