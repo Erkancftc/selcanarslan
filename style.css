@@ -12877,7 +12877,7 @@ input:checked + .custom-radio-wrap:after {
             font-weight: 600;
         }
         
-        .start-button, .results-button {
+        .start-button, .results-button, .screenshot-button, .back-button {
             background: #ffc000;
             color: white;
             border: none;
@@ -12953,15 +12953,15 @@ input:checked + .custom-radio-wrap:after {
             max-width: 1000px;
             margin: 0 auto;
             background: linear-gradient(145deg, #FFFFFF 0%, #FEFCF7 100%);
-            border-radius: 24px;
+            /* border-radius: 24px; */
             padding: 30px;
-            box-shadow: 0 20px 60px rgba(167, 139, 96, 0.15);
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            /* box-shadow: 0 20px 60px rgba(167, 139, 96, 0.15); */
+            border: 1px solid #ffc000;
         }
         
         .results-title {
             font-size: 2.8em;
-            color: #D4AF37;
+            color: #000;
             margin-bottom: 25px;
             font-weight: 700;
             letter-spacing: -0.5px;
@@ -12974,10 +12974,10 @@ input:checked + .custom-radio-wrap:after {
             font-weight: 600;
             background: linear-gradient(145deg, #F7F3E9 0%, #F2ECD6 100%);
             padding: 25px;
-            border-radius: 18px;
-            border-left: 5px solid #D4AF37;
-            border: 1px solid rgba(212, 175, 55, 0.15);
-            box-shadow: 0 8px 25px rgba(167, 139, 96, 0.08);
+            /* border-radius: 18px; */
+            /* border-left: 5px solid #D4AF37; */
+            border: 1px solid #ffc000;
+            /* box-shadow: 0 8px 25px rgba(167, 139, 96, 0.08); */
         }
         
         #results-wheel {
@@ -13000,9 +13000,9 @@ input:checked + .custom-radio-wrap:after {
         .stat-item {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             padding: 20px;
-            border-radius: 12px;
+            /* border-radius: 12px; */
             text-align: center;
-            border-left: 4px solid #f7aa00;
+            border-left: 1px solid #ffc000;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         
@@ -13020,7 +13020,7 @@ input:checked + .custom-radio-wrap:after {
             font-weight: bold;
             color: #f7aa00;
         }
-        
+/*         
         .screenshot-button {
             background: #17a2b8;
             color: white;
@@ -13035,7 +13035,7 @@ input:checked + .custom-radio-wrap:after {
             transition: all 0.3s ease;
             letter-spacing: 0.5px;
         }
-        
+         */
         .screenshot-button:hover {
             background: #138496;
             transform: translateY(-2px);
@@ -13052,10 +13052,10 @@ input:checked + .custom-radio-wrap:after {
         .score-item {
             background: linear-gradient(145deg, #FEFEFE 0%, #F9F6F0 100%);
             padding: 20px;
-            border-radius: 16px;
-            border-left: 4px solid #D4AF37;
+            /* border-radius: 16px; */
+            border-left: 1px solid #ffc000;
             box-shadow: 0 8px 25px rgba(167, 139, 96, 0.1);
-            border: 1px solid rgba(212, 175, 55, 0.08);
+            /* border: 1px solid rgba(212, 175, 55, 0.08); */
             transition: all 0.3s ease;
         }
         
@@ -13065,7 +13065,7 @@ input:checked + .custom-radio-wrap:after {
         }
         
         .score-item h4 {
-            color: #3D3B37;
+            color: #ffc000;
             margin: 0 0 12px 0;
             font-size: 1.1em;
             font-weight: 600;
@@ -13075,7 +13075,7 @@ input:checked + .custom-radio-wrap:after {
         .score-item .score {
             font-size: 1.8em;
             font-weight: 700;
-            color: #D4AF37;
+            color: #000;
             letter-spacing: -0.5px;
         }
         
@@ -13093,11 +13093,11 @@ input:checked + .custom-radio-wrap:after {
         .stat-item {
             background: linear-gradient(145deg, #F7F3E9 0%, #F2ECD6 100%);
             padding: 25px;
-            border-radius: 16px;
+            /* border-radius: 16px; */
             text-align: center;
-            border-left: 4px solid #D4AF37;
+            border-left: 1px solid #ffc000;
             box-shadow: 0 8px 25px rgba(167, 139, 96, 0.1);
-            border: 1px solid rgba(212, 175, 55, 0.15);
+            /* border: 1px solid rgba(212, 175, 55, 0.15); */
             transition: all 0.3s ease;
         }
         
@@ -13109,7 +13109,7 @@ input:checked + .custom-radio-wrap:after {
         .stat-label {
             display: block;
             font-size: 0.95em;
-            color: #6B6B6B;
+            color: #000;
             margin-bottom: 10px;
             font-weight: 500;
             letter-spacing: 0.2px;
@@ -13119,7 +13119,7 @@ input:checked + .custom-radio-wrap:after {
             display: block;
             font-size: 2em;
             font-weight: 700;
-            color: #D4AF37;
+            color: #ffc000;
             letter-spacing: -0.5px;
         }
         
@@ -13148,7 +13148,7 @@ input:checked + .custom-radio-wrap:after {
             box-shadow: 0 12px 35px rgba(212, 175, 55, 0.4);
         }
          */
-        .back-button {
+        /* .back-button {
             background: linear-gradient(145deg, #8B7355 0%, #6B5B47 100%);
             color: white;
             border: none;
@@ -13163,14 +13163,14 @@ input:checked + .custom-radio-wrap:after {
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 6px 20px rgba(139, 115, 85, 0.25);
         }
-        
+         */
         .back-button:hover {
-            background: linear-gradient(145deg, #6B5B47 0%, #5A4D3F 100%);
+            background: #c29200;
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(139, 115, 85, 0.35);
         }
         
-        .screenshot-button {
+        /* .screenshot-button {
             background: linear-gradient(145deg, #6B9BD2 0%, #4A7BA7 100%);
             color: white;
             border: none;
@@ -13184,10 +13184,10 @@ input:checked + .custom-radio-wrap:after {
             transition: all 0.3s ease;
             letter-spacing: 0.3px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+        } */
         
         .screenshot-button:hover {
-            background: linear-gradient(145deg, #4A7BA7 0%, #3D6A91 100%);
+            background: #c29200;
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(107, 155, 210, 0.35);
         }
