@@ -13478,7 +13478,7 @@ input:checked + .custom-radio-wrap:after {
             margin-bottom: 10px;
             padding: 5px;
             background: linear-gradient(145deg, #F7F3E9 0%, #F2ECD6 100%);
-            border-radius: 12px;
+            /* border-radius: 12px; */
             box-shadow: 0 6px 20px rgba(167, 139, 96, 0.08);
             border: 1px solid rgba(212, 175, 55, 0.1);
         }
@@ -13546,7 +13546,7 @@ input:checked + .custom-radio-wrap:after {
                 margin-bottom: 10px;
                 padding: 10px;
                 background: linear-gradient(145deg, #F7F3E9 0%, #F2ECD6 100%);
-                border-radius: 14px;
+                /* border-radius: 14px; */
                 border-left: 1px solid #ffc000;
             }
         }
