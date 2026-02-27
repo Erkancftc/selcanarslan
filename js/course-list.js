@@ -45,11 +45,25 @@ document.addEventListener('DOMContentLoaded', () => {
 // the JSON fetch was previously used to count courses/paginate.
 // if you still need it for other features, leave it but don't
 // override the results produced by the DOM-based logic.
-// fetch('./data/courses.json').then(res => res.json()).then(data => {
 //     const count = data.courses.length;
 //     if (count < 9) {
-//         educationCount.textContent = `${count} Eğitimden tamamı listeleniyor`;
-//     } else {
-//         educationCount.textContent = `${count} Eğitimden 9'u listeleniyor`;
-//     }
-// });
+    //         educationCount.textContent = `${count} Eğitimden tamamı listeleniyor`;
+    //     } else {
+        //         educationCount.textContent = `${count} Eğitimden 9'u listeleniyor`;
+        //     }
+        // });
+//    const coursePrice = document.querySelector('[data-course-price]');
+//    const courseName = document.querySelector('[data-course-name]')?.textContent.trim();
+
+//    if (coursePrice && courseName) {
+//        fetch('./data/courses.json')
+//            .then(res => res.json())
+//            .then(data => {
+//                const course = data.courses.find(c => c.heading.title === courseName);
+//                if (course) {
+//                    coursePrice.innerHTML = `${course.sidebar.courseInfo.price}`;
+//                    console.log("Price set:", coursePrice.innerHTML);
+//                }
+//            })
+//            .catch(err => console.error('Error fetching course data:', err));
+//    }

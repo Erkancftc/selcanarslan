@@ -47,7 +47,9 @@ $(document).ready(function() {
       slidesToShow: 4,
       prevArrow: '<a href="#" class="slick-prev fas fa-chevron-left"><span class="sr-only">Previous</span></a>',
       nextArrow: '<a href="#" class="slick-next fas fa-chevron-right"><span class="sr-only">Next</span></a>',
-      infinite: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
       adaptiveHeight: true,
       responsive: [{
         breakpoint: 1024,
