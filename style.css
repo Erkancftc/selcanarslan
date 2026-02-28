@@ -9100,6 +9100,15 @@ form .star-rating .customFormReset:checked + label {
   position: relative;
   overflow: hidden;
 }
+@media(max-width: 767px) {
+  .heading-banner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 .heading-banner:before {
   position: absolute;
